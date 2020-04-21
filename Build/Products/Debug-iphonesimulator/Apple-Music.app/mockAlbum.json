@@ -1,0 +1,279 @@
+{
+    "feed": {
+        "title": "Top Albums",
+        "id": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/10/explicit.json",
+        "author": {
+            "name": "iTunes Store",
+            "uri": "http://wwww.apple.com/us/itunes/"
+        },
+        "links": [
+            {
+                "self": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/10/explicit.json"
+            },
+            {
+                "alternate": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34&popId=82&app=music"
+            }
+        ],
+        "copyright": "Copyright 2018 Apple Inc. Alle Rechte vorbehalten.",
+        "country": "us",
+        "icon": "http://itunes.apple.com/favicon.ico",
+        "updated": "2020-04-18T01:54:51.000-07:00",
+        "results": [
+            {
+                "artistName": "DaBaby",
+                "id": "1508023035",
+                "releaseDate": "2020-04-17",
+                "name": "BLAME IT ON BABY",
+                "kind": "album",
+                "copyright": "South Coast Music Group/Interscope Records; ℗ 2020 Interscope Records",
+                "artistId": "1175595427",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/dababy/1175595427?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/cc/c2/34/ccc23410-3166-90b6-cc40-8a7698ae1a90/20UMGIM28169.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/blame-it-on-baby/1508023035?app=music"
+            },
+            {
+                "artistName": "Rod Wave",
+                "id": "1504192331",
+                "releaseDate": "2020-04-03",
+                "name": "Pray 4 Love",
+                "kind": "album",
+                "copyright": "℗ 2020 Alamo Records",
+                "artistId": "1140623439",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/rod-wave/1140623439?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/b8/ee/da/b8eedac6-2344-482f-a51f-5a95ec0d5759/14447.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/pray-4-love/1504192331?app=music"
+            },
+            {
+                "artistName": "dvsn",
+                "id": "1503186015",
+                "releaseDate": "2020-04-17",
+                "name": "A Muse In Her Feelings",
+                "kind": "album",
+                "copyright": "℗ 2020 OVO Sound/Warner Records Inc.",
+                "artistId": "1036952578",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/dvsn/1036952578?app=music",
+                "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music123/v4/fb/e3/b7/fbe3b71f-1aee-a846-0e40-1bb3e56eb72c/093624894810.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "15",
+                        "name": "R&B/Soul",
+                        "url": "https://itunes.apple.com/us/genre/id15"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/a-muse-in-her-feelings/1503186015?app=music"
+            },
+            {
+                "artistName": "Tory Lanez",
+                "id": "1506269876",
+                "releaseDate": "2020-04-10",
+                "name": "The New Toronto 3",
+                "kind": "album",
+                "copyright": "℗ 2020 Interscope Records",
+                "artistId": "440458549",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/tory-lanez/440458549?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/93/a3/84/93a3841d-63f3-bc8c-9e4c-bc714c090ca8/20UMGIM22468.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/the-new-toronto-3/1506269876?app=music"
+            },
+            {
+                "artistName": "Lil Baby",
+                "id": "1498988850",
+                "releaseDate": "2020-02-28",
+                "name": "My Turn",
+                "kind": "album",
+                "copyright": "Quality Control Music/Motown Records; ℗ 2020 Quality Control Music, LLC, under exclusive license to UMG Recordings, Inc.",
+                "artistId": "1276656483",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/lil-baby/1276656483?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/dd/25/8c/dd258c8a-f804-785f-1268-ad3cac0db873/20UMGIM04591.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/my-turn/1498988850?app=music"
+            },
+            {
+                "artistName": "Westside Gunn",
+                "id": "1506521703",
+                "releaseDate": "2020-04-17",
+                "name": "Pray for Paris",
+                "kind": "album",
+                "copyright": "℗ 2020 Griselda Records",
+                "artistId": "829760702",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/westside-gunn/829760702?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/4f/5b/c5/4f5bc576-a43a-8095-15d1-fbd33ef331f9/dj.vbothjgo.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/pray-for-paris/1506521703?app=music"
+            },
+            {
+                "artistName": "Lil Uzi Vert",
+                "id": "1502707380",
+                "releaseDate": "2020-03-13",
+                "name": "Eternal Atake (Deluxe) - LUV vs. The World 2",
+                "kind": "album",
+                "copyright": "℗ 2020 Atlantic Recording Corporation",
+                "artistId": "940710524",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/lil-uzi-vert/940710524?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/78/7a/e3/787ae30d-0b60-e5b8-87fe-9d43bc157c47/075679820310.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/eternal-atake-deluxe-luv-vs-the-world-2/1502707380?app=music"
+            },
+            {
+                "artistName": "Bad Bunny",
+                "id": "1500776322",
+                "releaseDate": "2020-02-29",
+                "name": "YHLQMDLG",
+                "kind": "album",
+                "copyright": "℗ 2020 Rimas Entertainment LLC",
+                "artistId": "1126808565",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/bad-bunny/1126808565?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ca/0e/31/ca0e3104-fe92-1985-65ba-3474808f0948/195081078724.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "1119",
+                        "name": "Urbano latino",
+                        "url": "https://itunes.apple.com/us/genre/id1119"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "12",
+                        "name": "Latino",
+                        "url": "https://itunes.apple.com/us/genre/id12"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/yhlqmdlg/1500776322?app=music"
+            },
+            {
+                "artistName": "Future",
+                "id": "1507279788",
+                "releaseDate": "2016-01-17",
+                "name": "Purple Reign",
+                "kind": "album",
+                "copyright": "℗ 2020 Epic Records, a division of Sony Music Entertainment. With Freebandz.",
+                "artistId": "128050210",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/future/128050210?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/f1/30/76/f13076fa-7df9-a12e-bc01-738d848f0345/886448381242.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/purple-reign/1507279788?app=music"
+            },
+            {
+                "artistName": "Fredo Bang",
+                "id": "1506127598",
+                "releaseDate": "2020-04-17",
+                "name": "Most Hated",
+                "kind": "album",
+                "copyright": "℗ 2020 Bang Biz Ent., LLC, under exclusive license to Def Jam Recordings, Inc",
+                "artistId": "1080703688",
+                "contentAdvisoryRating": "Explicit",
+                "artistUrl": "https://music.apple.com/us/artist/fredo-bang/1080703688?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/3b/05/db/3b05dbf1-5352-3137-1c78-77e18ac0c61c/20UMGIM24653.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/most-hated/1506127598?app=music"
+            }
+        ]
+    }
+}

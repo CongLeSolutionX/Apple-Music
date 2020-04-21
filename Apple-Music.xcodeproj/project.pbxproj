@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C97F2AB244C137A006D760F /* mockAlbum.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C97F2AA244C137A006D760F /* mockAlbum.json */; };
+		4C97F2AD244CF263006D760F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2AC244CF263006D760F /* Album.swift */; };
+		4C97F2B2244CFF3F006D760F /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2B1244CFF3F006D760F /* AlbumViewModel.swift */; };
+		4C97F2B5244D00B9006D760F /* AlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2B4244D00B9006D760F /* AlbumsService.swift */; };
+		4C97F2B7244D01DA006D760F /* AppleITuneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */; };
+		4C97F2BC244D13A6006D760F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2BB244D13A6006D760F /* DetailViewController.swift */; };
+		4CB95777244EBA9B00A00229 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB95776244EBA9B00A00229 /* UIView+Constraints.swift */; };
+		4CB95779244ED5E800A00229 /* URL+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB95778244ED5E800A00229 /* URL+DownloadImage.swift */; };
+		4CB9577B244EE6C200A00229 /* AlbumInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB9577A244EE6C200A00229 /* AlbumInfoViewModel.swift */; };
 		4CD206C0244AC1F100560B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206BF244AC1F100560B93 /* AppDelegate.swift */; };
-		4CD206C2244AC1F100560B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206C1244AC1F100560B93 /* SceneDelegate.swift */; };
-		4CD206C4244AC1F100560B93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206C3244AC1F100560B93 /* ViewController.swift */; };
-		4CD206C7244AC1F100560B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206C5244AC1F100560B93 /* Main.storyboard */; };
+		4CD206C4244AC1F100560B93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206C3244AC1F100560B93 /* HomeViewController.swift */; };
 		4CD206C9244AC1F300560B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206C8244AC1F300560B93 /* Assets.xcassets */; };
 		4CD206CC244AC1F300560B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206CA244AC1F300560B93 /* LaunchScreen.storyboard */; };
+		4CD206D4244B00D300560B93 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C97F2AA244C137A006D760F /* mockAlbum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockAlbum.json; sourceTree = "<group>"; };
+		4C97F2AC244CF263006D760F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		4C97F2B1244CFF3F006D760F /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		4C97F2B4244D00B9006D760F /* AlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsService.swift; sourceTree = "<group>"; };
+		4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleITuneAPI.swift; sourceTree = "<group>"; };
+		4C97F2BB244D13A6006D760F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4CB95776244EBA9B00A00229 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		4CB95778244ED5E800A00229 /* URL+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+DownloadImage.swift"; sourceTree = "<group>"; };
+		4CB9577A244EE6C200A00229 /* AlbumInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfoViewModel.swift; sourceTree = "<group>"; };
 		4CD206BC244AC1F100560B93 /* Apple-Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD206BF244AC1F100560B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CD206C1244AC1F100560B93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CD206C3244AC1F100560B93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4CD206C6244AC1F100560B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CD206C3244AC1F100560B93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4CD206C8244AC1F300560B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD206CB244AC1F300560B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CD206CD244AC1F300560B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C97F2AE244CF2E3006D760F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C97F2AC244CF263006D760F /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C97F2AF244CF2EA006D760F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C97F2B0244CF2F2006D760F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C97F2B1244CFF3F006D760F /* AlbumViewModel.swift */,
+				4CB9577A244EE6C200A00229 /* AlbumInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C97F2B3244D0074006D760F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C97F2B4244D00B9006D760F /* AlbumsService.swift */,
+				4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C97F2B8244D134B006D760F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CD206C3244AC1F100560B93 /* HomeViewController.swift */,
+				4C97F2BB244D13A6006D760F /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4CB95775244EBA6100A00229 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CB95776244EBA9B00A00229 /* UIView+Constraints.swift */,
+				4CB95778244ED5E800A00229 /* URL+DownloadImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4CD206B3244AC1F100560B93 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +124,14 @@
 		4CD206BE244AC1F100560B93 /* Apple-Music */ = {
 			isa = PBXGroup;
 			children = (
+				4C97F2AE244CF2E3006D760F /* Model */,
+				4C97F2AF244CF2EA006D760F /* View */,
+				4C97F2B0244CF2F2006D760F /* ViewModel */,
+				4C97F2B8244D134B006D760F /* Controllers */,
+				4C97F2B3244D0074006D760F /* Services */,
+				4CB95775244EBA6100A00229 /* Extensions */,
 				4CD206BF244AC1F100560B93 /* AppDelegate.swift */,
-				4CD206C1244AC1F100560B93 /* SceneDelegate.swift */,
-				4CD206C3244AC1F100560B93 /* ViewController.swift */,
-				4CD206C5244AC1F100560B93 /* Main.storyboard */,
+				4C97F2AA244C137A006D760F /* mockAlbum.json */,
 				4CD206C8244AC1F300560B93 /* Assets.xcassets */,
 				4CD206CA244AC1F300560B93 /* LaunchScreen.storyboard */,
 				4CD206CD244AC1F300560B93 /* Info.plist */,
@@ -125,9 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C97F2AB244C137A006D760F /* mockAlbum.json in Resources */,
 				4CD206CC244AC1F300560B93 /* LaunchScreen.storyboard in Resources */,
 				4CD206C9244AC1F300560B93 /* Assets.xcassets in Resources */,
-				4CD206C7244AC1F100560B93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +210,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD206C4244AC1F100560B93 /* ViewController.swift in Sources */,
+				4C97F2B7244D01DA006D760F /* AppleITuneAPI.swift in Sources */,
+				4CB95779244ED5E800A00229 /* URL+DownloadImage.swift in Sources */,
+				4C97F2B2244CFF3F006D760F /* AlbumViewModel.swift in Sources */,
+				4CD206D4244B00D300560B93 /* CustomTableViewCell.swift in Sources */,
+				4CB95777244EBA9B00A00229 /* UIView+Constraints.swift in Sources */,
+				4CD206C4244AC1F100560B93 /* HomeViewController.swift in Sources */,
+				4C97F2AD244CF263006D760F /* Album.swift in Sources */,
 				4CD206C0244AC1F100560B93 /* AppDelegate.swift in Sources */,
-				4CD206C2244AC1F100560B93 /* SceneDelegate.swift in Sources */,
+				4CB9577B244EE6C200A00229 /* AlbumInfoViewModel.swift in Sources */,
+				4C97F2B5244D00B9006D760F /* AlbumsService.swift in Sources */,
+				4C97F2BC244D13A6006D760F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4CD206C5244AC1F100560B93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CD206C6244AC1F100560B93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4CD206CA244AC1F300560B93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
