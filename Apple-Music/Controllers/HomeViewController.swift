@@ -38,9 +38,11 @@ class HomeViewController: UIViewController  {
         // add TableView into view
         view.addSubview(tableView)
         tableView.pin(to: view)
-        //tableView.frame = view.frame
         tableView.delegate = self
         tableView.dataSource = self
+        // self-sizing cells dymanically 
+        tableView.estimatedRowHeight = 110.0
+        tableView.rowHeight = UITableView.automaticDimension
         
         tableView.backgroundColor = UIColor.blue
         tableView.separatorColor = UIColor.clear // remove the separator lines
@@ -59,9 +61,6 @@ class HomeViewController: UIViewController  {
 }
 
 extension HomeViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
-    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //        let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController
         //detailVC?.currentAlbum = albumViewModel.albums
@@ -76,18 +75,14 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.cellReuseIdendifier, for: indexPath) as? CustomTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.cellReuseIdendifier, for: indexPath)
+            as? CustomTableViewCell else {
             fatalError("cannot dequeue cell")
         }
         
-        //cell.bindingData(albumViewModel: albumViewModel, index: indexPath.row)
+        cell.bindingData(albumViewModel: albumViewModel, index: indexPath.row)
         
         
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 118
-    }
-    
 }

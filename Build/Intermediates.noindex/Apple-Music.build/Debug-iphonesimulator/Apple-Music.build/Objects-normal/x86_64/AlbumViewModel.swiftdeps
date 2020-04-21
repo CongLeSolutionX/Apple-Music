@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "??"
+- "AlbumInfoViewModel"
 - "AlbumViewModel"
 - "AppleMusicAlbums"
 - "AssignmentPrecedence"
@@ -25,6 +26,7 @@ depends-member:
 - !private ["11Apple_Music5AlbumV", "artistName"]
 - !private ["11Apple_Music5AlbumV", "artworkUrl100"]
 - !private ["11Apple_Music5AlbumV", "name"]
+- ["11Apple_Music14AlbumViewModelC", "AlbumInfoViewModel"]
 - ["11Apple_Music14AlbumViewModelC", "AppleMusicAlbums"]
 - ["11Apple_Music14AlbumViewModelC", "Int"]
 - !private ["11Apple_Music14AlbumViewModelC", "NetworkConnection"]
@@ -38,6 +40,7 @@ depends-member:
 - ["11Apple_Music14AlbumViewModelC", "getArkworkImage"]
 - ["11Apple_Music14AlbumViewModelC", "getArtistName"]
 - ["11Apple_Music14AlbumViewModelC", "getNumberOfAlbums"]
+- ["11Apple_Music14AlbumViewModelC", "infoAlbumViewModel"]
 - ["11Apple_Music14AlbumViewModelC", "init"]
 - !private ["11Apple_Music14AlbumViewModelC", "print"]
 - ["11Apple_Music14AlbumViewModelC", "service"]
@@ -1430,4 +1433,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ee380348a33f947018f0d5458e6127ed"
+interface-hash: "5a7855017700822eab06aaa8449ab3f9"
