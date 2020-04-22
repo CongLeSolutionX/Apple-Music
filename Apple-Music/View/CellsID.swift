@@ -1,5 +1,5 @@
 //
-//  CellID.swift
+//  CellsID.swift
 //  Apple-Music
 //
 //  Created by Cong Le on 4/22/20.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum CellID {
+enum CellsID {
     static let cellReuseIdendifier = "Cell"
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 // Construct the URL for JSON request 
-enum AppleITuneAPI {
+struct AppleITuneAPI {
     
     // https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json
     

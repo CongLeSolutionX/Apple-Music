@@ -10,50 +10,147 @@ depends-top-level:
 - "Album"
 - "AlbumInfoViewModel"
 - "AssignmentPrecedence"
+- "Data"
+- "ImageService"
 - "String"
+- !private "StringLiteralType"
 - "URL"
+- !private "UnicodeScalarType"
+- "Void"
 depends-member:
 - !private ["11Apple_Music5AlbumV", "artistName"]
 - !private ["11Apple_Music5AlbumV", "artworkUrl100"]
+- !private ["11Apple_Music5AlbumV", "copyright"]
+- !private ["11Apple_Music5AlbumV", "genres"]
 - !private ["11Apple_Music5AlbumV", "name"]
+- !private ["11Apple_Music5AlbumV", "releaseDate"]
+- !private ["11Apple_Music5AlbumV", "url"]
 - ["11Apple_Music18AlbumInfoViewModelC", "Album"]
+- ["11Apple_Music18AlbumInfoViewModelC", "Data"]
+- ["11Apple_Music18AlbumInfoViewModelC", "ImageService"]
 - ["11Apple_Music18AlbumInfoViewModelC", "String"]
 - ["11Apple_Music18AlbumInfoViewModelC", "URL"]
+- ["11Apple_Music18AlbumInfoViewModelC", "Void"]
 - !private ["11Apple_Music18AlbumInfoViewModelC", "albumInfo"]
 - ["11Apple_Music18AlbumInfoViewModelC", "albumName"]
-- ["11Apple_Music18AlbumInfoViewModelC", "arkworkLink"]
 - ["11Apple_Music18AlbumInfoViewModelC", "artistName"]
+- ["11Apple_Music18AlbumInfoViewModelC", "artworkLink"]
+- ["11Apple_Music18AlbumInfoViewModelC", "copyrightInfo"]
+- ["11Apple_Music18AlbumInfoViewModelC", "genre"]
+- ["11Apple_Music18AlbumInfoViewModelC", "getArtworkImage"]
+- !private ["11Apple_Music18AlbumInfoViewModelC", "imageService"]
 - ["11Apple_Music18AlbumInfoViewModelC", "init"]
+- ["11Apple_Music18AlbumInfoViewModelC", "linkoutUrl"]
+- ["11Apple_Music18AlbumInfoViewModelC", "releaseDate"]
+- ["11Apple_Music18AlbumInfoViewModelC", "updateView"]
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "joined"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "joined"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "joined"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "joined"]
+- !private ["10Foundation15ContiguousBytesP", "compactMap"]
+- !private ["10Foundation15ContiguousBytesP", "joined"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "joined"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "joined"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "joined"]
+- !private ["10Foundation12DataProtocolP", "compactMap"]
+- !private ["10Foundation12DataProtocolP", "joined"]
 - !private ["Se", "artistName"]
 - !private ["Se", "artworkUrl100"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "copyright"]
+- !private ["Se", "genres"]
 - !private ["Se", "init"]
+- !private ["Se", "joined"]
 - !private ["Se", "name"]
+- !private ["Se", "releaseDate"]
+- !private ["Se", "url"]
 - !private ["SE", "artistName"]
 - !private ["SE", "artworkUrl100"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "copyright"]
+- !private ["SE", "genres"]
 - !private ["SE", "init"]
+- !private ["SE", "joined"]
 - !private ["SE", "name"]
+- !private ["SE", "releaseDate"]
+- !private ["SE", "url"]
+- !private ["SQ", "compactMap"]
 - !private ["SQ", "init"]
+- !private ["SQ", "joined"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "joined"]
+- !private ["11Apple_Music5GenreV", "name"]
+- !private ["SH", "compactMap"]
 - !private ["SH", "init"]
+- !private ["SH", "joined"]
+- !private ["11Apple_Music12ImageServiceC", "download"]
+- !private ["11Apple_Music12ImageServiceC", "init"]
+- !private ["SM", "compactMap"]
+- !private ["SM", "joined"]
+- !private ["10Foundation19MutableDataProtocolP", "compactMap"]
+- !private ["10Foundation19MutableDataProtocolP", "joined"]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "joined"]
+- !private ["Sm", "compactMap"]
+- !private ["Sm", "joined"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "joined"]
 - !private ["10Foundation3URLV", "init"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "joined"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "joined"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "compactMap"]
+- !private ["s19_HasContiguousBytesP", "joined"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "joined"]
 depends-nominal:
 - !private "11Apple_Music5AlbumV"
 - "11Apple_Music18AlbumInfoViewModelC"
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "11Apple_Music5GenreV"
 - !private "SH"
+- !private "11Apple_Music12ImageServiceC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sk"
+- !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
 - !private "10Foundation3URLV"
+- !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -1267,4 +1364,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "296a69075b6833e4028a0666754cf82c"
+interface-hash: "55a9acedd46342e1384436f90bf2fd21"

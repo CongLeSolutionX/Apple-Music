@@ -17,36 +17,29 @@ class CustomTableViewCell: UITableViewCell {
     }()
     
     lazy var albumNameLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.adjustsFontSizeToFitWidth = true
-        label.textAlignment = .left
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.text = "Album name label"
-        return label
-    }()
-    lazy var artistNameLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0    // to avoid truncated text
-        label.adjustsFontSizeToFitWidth = true
-        label.textAlignment = .left
-        label.font = UIFont.italicSystemFont(ofSize: 15)
-        label.text = "Artist name label"
-        
-        return label
+        return UILabel(stylizedBoldLabelWithSize: 18, style: .headline)
     }()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String? ) {
+    lazy var artistNameLabel: UILabel = {
+        return UILabel(stylizedItalicLabelWithSize: 15, style: .subheadline)
+    }()
+    
+    var albumInfoViewModel: AlbumInfoViewModel? {
+        didSet {
+            albumInfoViewModel?.updateView = bindData
+            bindData()
+        }
+    }
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addUIElements()
+        contentView.backgroundColor = .red
+        selectionStyle = .none
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func layoutSubviews() {
-        contentView.backgroundColor = UIColor.red
     }
     
     func addUIElements() {
@@ -58,39 +51,58 @@ class CustomTableViewCell: UITableViewCell {
         setArtistNameLabelConstraints()
     }
     
-    func bindingData(albumViewModel: AlbumViewModel, index: Int) {
-        albumNameLabel.text = albumViewModel.getAlbumName(index)
-        artistNameLabel.text = albumViewModel.getArtistName(index)
+    func bindData() {
+        guard let albumInfoViewModel = albumInfoViewModel else {
+            albumNameLabel.text = nil
+            artistNameLabel.text = nil
+            albumImage.image = nil
+            return
+        }
+        albumNameLabel.text = albumInfoViewModel.albumName
+        artistNameLabel.text = albumInfoViewModel.artistName
+        albumInfoViewModel.getArtworkImage { data in
+            DispatchQueue.main.async {
+                guard let data = data else {
+                    self.albumImage.image = nil
+                    return
+                }
+                self.albumImage.image = UIImage(data: data)
+            }
+        }
     }
     
     func setImageConstraints() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-        albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor),
-        albumImage.widthAnchor.constraint(equalToConstant: 108),
-        albumImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
-        albumImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
-        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: albumImage.bottomAnchor, constant: 12)
-        ])
+        albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor).isActive = true
+        albumImage.widthAnchor.constraint(equalToConstant: 108).isActive    = true
+        
+        albumImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,
+                                            constant: 12).isActive    = true
+        
+        albumImage.topAnchor.constraint(equalTo: contentView.topAnchor,
+                                        constant: 12).isActive    = true
+        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: albumImage.bottomAnchor,
+                                            constant: 12).isActive = true
     }
     
     func setAlbumNameLabelConstraints() {
         albumNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-        albumNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 20),
-        albumNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
-        artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor, constant: 12)
-        ])
+        albumNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor,
+                                                constant: 20).isActive = true
+        albumNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,
+                                                 constant: -12).isActive = true
+        artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor,
+                                             constant: 12).isActive    = true
     }
     func setArtistNameLabelConstraints() {
         artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([
-        artistNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 20),
-        artistNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: artistNameLabel.bottomAnchor, constant: 12)
-        ])
+        artistNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor,
+                                                 constant: 20).isActive = true
+        artistNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor,
+                                                  constant: -12).isActive = true
+        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: artistNameLabel.bottomAnchor,
+                                            constant: 12).isActive = true
     }
     
 }

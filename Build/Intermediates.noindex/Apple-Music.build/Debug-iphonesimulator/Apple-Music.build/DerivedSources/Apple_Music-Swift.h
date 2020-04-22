@@ -216,7 +216,6 @@ SWIFT_CLASS("_TtC11Apple_Music19CustomTableViewCell")
 @interface CustomTableViewCell : UITableViewCell
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
 @end
 
 @class NSBundle;
@@ -224,6 +223,7 @@ SWIFT_CLASS("_TtC11Apple_Music19CustomTableViewCell")
 SWIFT_CLASS("_TtC11Apple_Music20DetailViewController")
 @interface DetailViewController : UIViewController
 - (void)viewDidLoad;
+- (void)linkoutButtonAction;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -247,6 +247,8 @@ SWIFT_CLASS("_TtC11Apple_Music18HomeViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 

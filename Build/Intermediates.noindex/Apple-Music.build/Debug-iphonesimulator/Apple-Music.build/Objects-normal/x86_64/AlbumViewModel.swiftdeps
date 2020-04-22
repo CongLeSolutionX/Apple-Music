@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "??"
+- "Album"
 - "AlbumInfoViewModel"
 - "AlbumViewModel"
-- "AppleMusicAlbums"
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
+- "Data"
+- "ImageService"
 - "Int"
-- !private "IntegerLiteralType"
 - !private "NetworkConnection"
 - "NetworkService"
 - "String"
@@ -26,29 +26,32 @@ depends-member:
 - !private ["11Apple_Music5AlbumV", "artistName"]
 - !private ["11Apple_Music5AlbumV", "artworkUrl100"]
 - !private ["11Apple_Music5AlbumV", "name"]
+- !private ["11Apple_Music18AlbumInfoViewModelC", "init"]
+- ["11Apple_Music14AlbumViewModelC", "Album"]
 - ["11Apple_Music14AlbumViewModelC", "AlbumInfoViewModel"]
-- ["11Apple_Music14AlbumViewModelC", "AppleMusicAlbums"]
+- ["11Apple_Music14AlbumViewModelC", "Data"]
+- ["11Apple_Music14AlbumViewModelC", "ImageService"]
 - ["11Apple_Music14AlbumViewModelC", "Int"]
 - !private ["11Apple_Music14AlbumViewModelC", "NetworkConnection"]
 - ["11Apple_Music14AlbumViewModelC", "NetworkService"]
 - ["11Apple_Music14AlbumViewModelC", "String"]
 - ["11Apple_Music14AlbumViewModelC", "URL"]
 - ["11Apple_Music14AlbumViewModelC", "Void"]
-- ["11Apple_Music14AlbumViewModelC", "albums"]
+- !private ["11Apple_Music14AlbumViewModelC", "albums"]
 - ["11Apple_Music14AlbumViewModelC", "downloadAlbum"]
 - ["11Apple_Music14AlbumViewModelC", "getAlbumName"]
-- ["11Apple_Music14AlbumViewModelC", "getArkworkImage"]
 - ["11Apple_Music14AlbumViewModelC", "getArtistName"]
-- ["11Apple_Music14AlbumViewModelC", "getNumberOfAlbums"]
+- ["11Apple_Music14AlbumViewModelC", "getArtworkImage"]
+- !private ["11Apple_Music14AlbumViewModelC", "imageService"]
 - ["11Apple_Music14AlbumViewModelC", "infoAlbumViewModel"]
 - ["11Apple_Music14AlbumViewModelC", "init"]
+- ["11Apple_Music14AlbumViewModelC", "numberOfAlbums"]
 - !private ["11Apple_Music14AlbumViewModelC", "print"]
-- ["11Apple_Music14AlbumViewModelC", "service"]
+- !private ["11Apple_Music14AlbumViewModelC", "service"]
 - ["11Apple_Music14AlbumViewModelC", "updateView"]
-- ["11Apple_Music0aB6AlbumsV", "deinit"]
 - !private ["11Apple_Music0aB6AlbumsV", "feed"]
-- ["11Apple_Music0aB6AlbumsV", "init"]
 - !private ["Sa", "count"]
+- ["Sa", "init"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "artistName"]
 - !private ["s10ArraySliceV", "artworkUrl100"]
@@ -56,40 +59,46 @@ depends-member:
 - !private ["SK", "artistName"]
 - !private ["SK", "artworkUrl100"]
 - !private ["SK", "count"]
+- ["SK", "init"]
 - !private ["SK", "name"]
 - !private ["SK", "subscript"]
 - !private ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "artistName"]
 - !private ["Sl", "artworkUrl100"]
 - !private ["Sl", "count"]
+- ["Sl", "init"]
 - !private ["Sl", "name"]
 - !private ["Sl", "subscript"]
 - !private ["10Foundation15ContiguousBytesP", "artistName"]
 - !private ["10Foundation15ContiguousBytesP", "artworkUrl100"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
+- ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "name"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "artistName"]
 - !private ["s28CustomDebugStringConvertibleP", "artworkUrl100"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s17CustomReflectableP", "artistName"]
 - !private ["s17CustomReflectableP", "artworkUrl100"]
 - !private ["s17CustomReflectableP", "count"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "name"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "artistName"]
 - !private ["s23CustomStringConvertibleP", "artworkUrl100"]
 - !private ["s23CustomStringConvertibleP", "count"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "artistName"]
 - !private ["10Foundation12DataProtocolP", "artworkUrl100"]
 - !private ["10Foundation12DataProtocolP", "count"]
+- ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation12DataProtocolP", "name"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "artistName"]
@@ -112,7 +121,7 @@ depends-member:
 - !private ["SQ", "artworkUrl100"]
 - !private ["SQ", "count"]
 - !private ["SQ", "failure"]
-- !private ["SQ", "init"]
+- ["SQ", "init"]
 - !private ["SQ", "name"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "success"]
@@ -122,6 +131,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "artistName"]
 - !private ["s25ExpressibleByArrayLiteralP", "artworkUrl100"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "name"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["11Apple_Music4FeedV", "results"]
@@ -129,16 +139,20 @@ depends-member:
 - !private ["SH", "artworkUrl100"]
 - !private ["SH", "count"]
 - !private ["SH", "failure"]
-- !private ["SH", "init"]
+- ["SH", "init"]
 - !private ["SH", "name"]
 - !private ["SH", "subscript"]
 - !private ["SH", "success"]
+- !private ["11Apple_Music12ImageServiceC", "download"]
+- ["11Apple_Music12ImageServiceC", "init"]
 - !private ["SM", "artistName"]
 - !private ["SM", "artworkUrl100"]
 - !private ["SM", "count"]
+- ["SM", "init"]
 - !private ["SM", "name"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
+- ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["11Apple_Music17NetworkConnectionC", "deinit"]
 - !private ["11Apple_Music17NetworkConnectionC", "init"]
@@ -147,11 +161,13 @@ depends-member:
 - !private ["Sk", "artistName"]
 - !private ["Sk", "artworkUrl100"]
 - !private ["Sk", "count"]
+- ["Sk", "init"]
 - !private ["Sk", "name"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "artistName"]
 - !private ["Sm", "artworkUrl100"]
 - !private ["Sm", "count"]
+- ["Sm", "init"]
 - !private ["Sm", "name"]
 - !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
@@ -160,67 +176,74 @@ depends-member:
 - !private ["ST", "artistName"]
 - !private ["ST", "artworkUrl100"]
 - !private ["ST", "count"]
+- ["ST", "init"]
 - !private ["ST", "name"]
 - !private ["ST", "subscript"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["s14_ArrayProtocolP", "artistName"]
 - !private ["s14_ArrayProtocolP", "artworkUrl100"]
 - !private ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "name"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "artistName"]
 - !private ["s24_DestructorSafeContainerP", "artworkUrl100"]
 - !private ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "name"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "count"]
+- ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
 - !private "11Apple_Music5AlbumV"
+- !private "11Apple_Music18AlbumInfoViewModelC"
 - "11Apple_Music14AlbumViewModelC"
-- "11Apple_Music0aB6AlbumsV"
-- !private "Sa"
+- !private "11Apple_Music0aB6AlbumsV"
+- "Sa"
 - !private "s10ArraySliceV"
-- !private "SK"
-- !private "s7CVarArgP"
-- !private "Sl"
-- !private "10Foundation15ContiguousBytesP"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "10Foundation12DataProtocolP"
+- "SK"
+- "s7CVarArgP"
+- "Sl"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
 - "Se"
 - "SE"
-- !private "SQ"
+- "SQ"
 - !private "s5ErrorP"
 - !private "11Apple_Music9ErrorInfoV"
-- !private "s25ExpressibleByArrayLiteralP"
+- "s25ExpressibleByArrayLiteralP"
 - !private "11Apple_Music4FeedV"
-- !private "SH"
-- !private "SM"
-- !private "10Foundation19MutableDataProtocolP"
+- "SH"
+- "11Apple_Music12ImageServiceC"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
 - !private "11Apple_Music17NetworkConnectionC"
 - !private "11Apple_Music14NetworkServiceP"
-- !private "Sk"
-- !private "Sm"
+- "Sk"
+- "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s6ResultO"
-- !private "ST"
+- "ST"
 - !private "10Foundation3URLV"
-- !private "s14_ArrayProtocolP"
+- "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s24_DestructorSafeContainerP"
+- "s24_DestructorSafeContainerP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
-- !private "s19_HasContiguousBytesP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -1433,4 +1456,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5a7855017700822eab06aaa8449ab3f9"
+interface-hash: "1b6ec39c464eb183af7720ac52326146"
