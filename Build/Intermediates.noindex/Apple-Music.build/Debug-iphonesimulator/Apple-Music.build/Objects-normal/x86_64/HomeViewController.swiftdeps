@@ -3,10 +3,8 @@ provides-top-level:
 - "HomeViewController"
 provides-nominal:
 - "11Apple_Music18HomeViewControllerC"
-- "11Apple_Music18HomeViewControllerC5CellsV"
 provides-member:
 - ["11Apple_Music18HomeViewControllerC", ""]
-- ["11Apple_Music18HomeViewControllerC5CellsV", ""]
 provides-dynamic-lookup:
 - "tableView"
 - "viewDidLoad"
@@ -15,6 +13,7 @@ depends-top-level:
 - !private "AppleITuneAPI"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
+- !private "CellID"
 - !private "CustomTableViewCell"
 - !private "DispatchQueue"
 - !private "FloatLiteralType"
@@ -22,7 +21,7 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - !private "IntegerLiteralType"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - !private "UIColor"
 - "UITableView"
 - "UITableViewCell"
@@ -36,7 +35,7 @@ depends-member:
 - !private ["11Apple_Music14AlbumViewModelC", "getNumberOfAlbums"]
 - ["11Apple_Music14AlbumViewModelC", "init"]
 - !private ["11Apple_Music14AlbumViewModelC", "updateView"]
-- !private ["11Apple_Music0A8ITuneAPIV", "getAlbumURL"]
+- !private ["11Apple_Music0A8ITuneAPIO", "getAlbumURL"]
 - !private ["SK", "row"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "automaticDimension"]
@@ -55,7 +54,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "separatorColor"]
 - ["s7CVarArgP", "AlbumViewModel"]
 - !private ["s7CVarArgP", "AppleITuneAPI"]
-- !private ["s7CVarArgP", "Cells"]
+- !private ["s7CVarArgP", "CellID"]
 - !private ["s7CVarArgP", "CustomTableViewCell"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "UIColor"]
@@ -105,7 +104,6 @@ depends-member:
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
 - !private ["s7CVarArgP", "separatorColor"]
-- !private ["s7CVarArgP", "setUpNavigationBar"]
 - !private ["s7CVarArgP", "setUpTableView"]
 - ["s7CVarArgP", "tableView"]
 - ["s7CVarArgP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -114,13 +112,12 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
-- ["11Apple_Music18HomeViewControllerC5CellsV", "cellReuseIdendifier"]
-- ["11Apple_Music18HomeViewControllerC5CellsV", "init"]
+- !private ["11Apple_Music6CellIDO", "cellReuseIdendifier"]
 - !private ["Sl", "row"]
 - !private ["SL", "row"]
 - ["s28CustomDebugStringConvertibleP", "AlbumViewModel"]
 - !private ["s28CustomDebugStringConvertibleP", "AppleITuneAPI"]
-- !private ["s28CustomDebugStringConvertibleP", "Cells"]
+- !private ["s28CustomDebugStringConvertibleP", "CellID"]
 - !private ["s28CustomDebugStringConvertibleP", "CustomTableViewCell"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -171,7 +168,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "separatorColor"]
-- !private ["s28CustomDebugStringConvertibleP", "setUpNavigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "setUpTableView"]
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - ["s28CustomDebugStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -184,7 +180,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "row"]
 - ["s23CustomStringConvertibleP", "AlbumViewModel"]
 - !private ["s23CustomStringConvertibleP", "AppleITuneAPI"]
-- !private ["s23CustomStringConvertibleP", "Cells"]
+- !private ["s23CustomStringConvertibleP", "CellID"]
 - !private ["s23CustomStringConvertibleP", "CustomTableViewCell"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -237,7 +233,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s23CustomStringConvertibleP", "separatorColor"]
-- !private ["s23CustomStringConvertibleP", "setUpNavigationBar"]
 - !private ["s23CustomStringConvertibleP", "setUpTableView"]
 - ["s23CustomStringConvertibleP", "tableView"]
 - ["s23CustomStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -259,7 +254,7 @@ depends-member:
 - !private ["SE", "row"]
 - ["SQ", "AlbumViewModel"]
 - !private ["SQ", "AppleITuneAPI"]
-- !private ["SQ", "Cells"]
+- !private ["SQ", "CellID"]
 - !private ["SQ", "CustomTableViewCell"]
 - !private ["SQ", "DispatchQueue"]
 - !private ["SQ", "UIColor"]
@@ -310,7 +305,6 @@ depends-member:
 - ["SQ", "sectionIndexTitles"]
 - ["SQ", "sectionIndexTitlesForTableView"]
 - !private ["SQ", "separatorColor"]
-- !private ["SQ", "setUpNavigationBar"]
 - !private ["SQ", "setUpTableView"]
 - ["SQ", "tableView"]
 - ["SQ", "tableViewDidEndMultipleSelectionInteraction"]
@@ -323,7 +317,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "addSubview"]
 - ["SH", "AlbumViewModel"]
 - !private ["SH", "AppleITuneAPI"]
-- !private ["SH", "Cells"]
+- !private ["SH", "CellID"]
 - !private ["SH", "CustomTableViewCell"]
 - !private ["SH", "DispatchQueue"]
 - !private ["SH", "UIColor"]
@@ -374,7 +368,6 @@ depends-member:
 - ["SH", "sectionIndexTitles"]
 - ["SH", "sectionIndexTitlesForTableView"]
 - !private ["SH", "separatorColor"]
-- !private ["SH", "setUpNavigationBar"]
 - !private ["SH", "setUpTableView"]
 - ["SH", "tableView"]
 - ["SH", "tableViewDidEndMultipleSelectionInteraction"]
@@ -385,7 +378,7 @@ depends-member:
 - ["SH", "viewForZoomingInScrollView"]
 - ["11Apple_Music18HomeViewControllerC", "AlbumViewModel"]
 - !private ["11Apple_Music18HomeViewControllerC", "AppleITuneAPI"]
-- ["11Apple_Music18HomeViewControllerC", "Cells"]
+- !private ["11Apple_Music18HomeViewControllerC", "CellID"]
 - !private ["11Apple_Music18HomeViewControllerC", "CustomTableViewCell"]
 - !private ["11Apple_Music18HomeViewControllerC", "DispatchQueue"]
 - ["11Apple_Music18HomeViewControllerC", "IndexPath"]
@@ -432,7 +425,7 @@ depends-member:
 - !private ["SM", "row"]
 - ["So8NSCodingP", "AlbumViewModel"]
 - !private ["So8NSCodingP", "AppleITuneAPI"]
-- !private ["So8NSCodingP", "Cells"]
+- !private ["So8NSCodingP", "CellID"]
 - !private ["So8NSCodingP", "CustomTableViewCell"]
 - !private ["So8NSCodingP", "DispatchQueue"]
 - !private ["So8NSCodingP", "UIColor"]
@@ -480,7 +473,6 @@ depends-member:
 - ["So8NSCodingP", "sectionIndexTitles"]
 - ["So8NSCodingP", "sectionIndexTitlesForTableView"]
 - !private ["So8NSCodingP", "separatorColor"]
-- !private ["So8NSCodingP", "setUpNavigationBar"]
 - !private ["So8NSCodingP", "setUpTableView"]
 - ["So8NSCodingP", "tableView"]
 - ["So8NSCodingP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -494,7 +486,7 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - ["So26NSExtensionRequestHandlingP", "AlbumViewModel"]
 - !private ["So26NSExtensionRequestHandlingP", "AppleITuneAPI"]
-- !private ["So26NSExtensionRequestHandlingP", "Cells"]
+- !private ["So26NSExtensionRequestHandlingP", "CellID"]
 - !private ["So26NSExtensionRequestHandlingP", "CustomTableViewCell"]
 - !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
@@ -526,7 +518,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillEndDragging"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitles"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitlesForTableView"]
-- !private ["So26NSExtensionRequestHandlingP", "setUpNavigationBar"]
 - !private ["So26NSExtensionRequestHandlingP", "setUpTableView"]
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - ["So26NSExtensionRequestHandlingP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -543,7 +534,7 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "init"]
 - ["So8NSObjectC", "AlbumViewModel"]
 - !private ["So8NSObjectC", "AppleITuneAPI"]
-- !private ["So8NSObjectC", "Cells"]
+- !private ["So8NSObjectC", "CellID"]
 - !private ["So8NSObjectC", "CustomTableViewCell"]
 - !private ["So8NSObjectC", "DispatchQueue"]
 - ["So8NSObjectC", "IndexPath"]
@@ -606,7 +597,7 @@ depends-member:
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectP", "AlbumViewModel"]
 - !private ["So8NSObjectP", "AppleITuneAPI"]
-- !private ["So8NSObjectP", "Cells"]
+- !private ["So8NSObjectP", "CellID"]
 - !private ["So8NSObjectP", "CustomTableViewCell"]
 - !private ["So8NSObjectP", "DispatchQueue"]
 - !private ["So8NSObjectP", "UIColor"]
@@ -656,7 +647,6 @@ depends-member:
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
 - !private ["So8NSObjectP", "separatorColor"]
-- !private ["So8NSObjectP", "setUpNavigationBar"]
 - !private ["So8NSObjectP", "setUpTableView"]
 - ["So8NSObjectP", "tableView"]
 - ["So8NSObjectP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -712,7 +702,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "separatorColor"]
 - ["So21UIAppearanceContainerP", "AlbumViewModel"]
 - !private ["So21UIAppearanceContainerP", "AppleITuneAPI"]
-- !private ["So21UIAppearanceContainerP", "Cells"]
+- !private ["So21UIAppearanceContainerP", "CellID"]
 - !private ["So21UIAppearanceContainerP", "CustomTableViewCell"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
@@ -758,7 +748,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "sectionIndexTitles"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitlesForTableView"]
 - !private ["So21UIAppearanceContainerP", "separatorColor"]
-- !private ["So21UIAppearanceContainerP", "setUpNavigationBar"]
 - !private ["So21UIAppearanceContainerP", "setUpTableView"]
 - ["So21UIAppearanceContainerP", "tableView"]
 - ["So21UIAppearanceContainerP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -773,7 +762,7 @@ depends-member:
 - !private ["So7UIColorC", "init"]
 - ["So18UIContentContainerP", "AlbumViewModel"]
 - !private ["So18UIContentContainerP", "AppleITuneAPI"]
-- !private ["So18UIContentContainerP", "Cells"]
+- !private ["So18UIContentContainerP", "CellID"]
 - !private ["So18UIContentContainerP", "CustomTableViewCell"]
 - !private ["So18UIContentContainerP", "DispatchQueue"]
 - !private ["So18UIContentContainerP", "UIColor"]
@@ -805,7 +794,6 @@ depends-member:
 - ["So18UIContentContainerP", "scrollViewWillEndDragging"]
 - ["So18UIContentContainerP", "sectionIndexTitles"]
 - ["So18UIContentContainerP", "sectionIndexTitlesForTableView"]
-- !private ["So18UIContentContainerP", "setUpNavigationBar"]
 - !private ["So18UIContentContainerP", "setUpTableView"]
 - ["So18UIContentContainerP", "tableView"]
 - ["So18UIContentContainerP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -858,7 +846,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "separatorColor"]
 - ["So18UIFocusEnvironmentP", "AlbumViewModel"]
 - !private ["So18UIFocusEnvironmentP", "AppleITuneAPI"]
-- !private ["So18UIFocusEnvironmentP", "Cells"]
+- !private ["So18UIFocusEnvironmentP", "CellID"]
 - !private ["So18UIFocusEnvironmentP", "CustomTableViewCell"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
@@ -904,7 +892,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "sectionIndexTitles"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UIFocusEnvironmentP", "separatorColor"]
-- !private ["So18UIFocusEnvironmentP", "setUpNavigationBar"]
 - !private ["So18UIFocusEnvironmentP", "setUpTableView"]
 - ["So18UIFocusEnvironmentP", "tableView"]
 - ["So18UIFocusEnvironmentP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -976,7 +963,7 @@ depends-member:
 - !private ["So16UINavigationItemC", "title"]
 - ["So30UIPasteConfigurationSupportingP", "AlbumViewModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "AppleITuneAPI"]
-- !private ["So30UIPasteConfigurationSupportingP", "Cells"]
+- !private ["So30UIPasteConfigurationSupportingP", "CellID"]
 - !private ["So30UIPasteConfigurationSupportingP", "CustomTableViewCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -1022,7 +1009,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "separatorColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "setUpNavigationBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "setUpTableView"]
 - ["So30UIPasteConfigurationSupportingP", "tableView"]
 - ["So30UIPasteConfigurationSupportingP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1033,7 +1019,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "AlbumViewModel"]
 - !private ["So11UIResponderC", "AppleITuneAPI"]
-- !private ["So11UIResponderC", "Cells"]
+- !private ["So11UIResponderC", "CellID"]
 - !private ["So11UIResponderC", "CustomTableViewCell"]
 - !private ["So11UIResponderC", "DispatchQueue"]
 - ["So11UIResponderC", "IndexPath"]
@@ -1092,7 +1078,7 @@ depends-member:
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So30UIResponderStandardEditActionsP", "AlbumViewModel"]
 - !private ["So30UIResponderStandardEditActionsP", "AppleITuneAPI"]
-- !private ["So30UIResponderStandardEditActionsP", "Cells"]
+- !private ["So30UIResponderStandardEditActionsP", "CellID"]
 - !private ["So30UIResponderStandardEditActionsP", "CustomTableViewCell"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -1138,7 +1124,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitles"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "separatorColor"]
-- !private ["So30UIResponderStandardEditActionsP", "setUpNavigationBar"]
 - !private ["So30UIResponderStandardEditActionsP", "setUpTableView"]
 - ["So30UIResponderStandardEditActionsP", "tableView"]
 - ["So30UIResponderStandardEditActionsP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1161,7 +1146,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "separatorColor"]
 - ["So20UIScrollViewDelegateP", "AlbumViewModel"]
 - !private ["So20UIScrollViewDelegateP", "AppleITuneAPI"]
-- !private ["So20UIScrollViewDelegateP", "Cells"]
+- !private ["So20UIScrollViewDelegateP", "CellID"]
 - !private ["So20UIScrollViewDelegateP", "CustomTableViewCell"]
 - !private ["So20UIScrollViewDelegateP", "DispatchQueue"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
@@ -1191,7 +1176,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitles"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitlesForTableView"]
-- !private ["So20UIScrollViewDelegateP", "setUpNavigationBar"]
 - !private ["So20UIScrollViewDelegateP", "setUpTableView"]
 - ["So20UIScrollViewDelegateP", "tableView"]
 - ["So20UIScrollViewDelegateP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1213,7 +1197,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "separatorColor"]
 - ["So16UIStateRestoringP", "AlbumViewModel"]
 - !private ["So16UIStateRestoringP", "AppleITuneAPI"]
-- !private ["So16UIStateRestoringP", "Cells"]
+- !private ["So16UIStateRestoringP", "CellID"]
 - !private ["So16UIStateRestoringP", "CustomTableViewCell"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
 - !private ["So16UIStateRestoringP", "UIColor"]
@@ -1245,7 +1229,6 @@ depends-member:
 - ["So16UIStateRestoringP", "scrollViewWillEndDragging"]
 - ["So16UIStateRestoringP", "sectionIndexTitles"]
 - ["So16UIStateRestoringP", "sectionIndexTitlesForTableView"]
-- !private ["So16UIStateRestoringP", "setUpNavigationBar"]
 - !private ["So16UIStateRestoringP", "setUpTableView"]
 - ["So16UIStateRestoringP", "tableView"]
 - ["So16UIStateRestoringP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1269,7 +1252,7 @@ depends-member:
 - !private ["So15UITableViewCellC", "bindingData"]
 - ["So21UITableViewDataSourceP", "AlbumViewModel"]
 - !private ["So21UITableViewDataSourceP", "AppleITuneAPI"]
-- !private ["So21UITableViewDataSourceP", "Cells"]
+- !private ["So21UITableViewDataSourceP", "CellID"]
 - !private ["So21UITableViewDataSourceP", "CustomTableViewCell"]
 - !private ["So21UITableViewDataSourceP", "DispatchQueue"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
@@ -1299,7 +1282,6 @@ depends-member:
 - ["So21UITableViewDataSourceP", "scrollViewWillEndDragging"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitles"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitlesForTableView"]
-- !private ["So21UITableViewDataSourceP", "setUpNavigationBar"]
 - !private ["So21UITableViewDataSourceP", "setUpTableView"]
 - ["So21UITableViewDataSourceP", "tableView"]
 - ["So21UITableViewDataSourceP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1309,7 +1291,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
 - ["So19UITableViewDelegateP", "AlbumViewModel"]
 - !private ["So19UITableViewDelegateP", "AppleITuneAPI"]
-- !private ["So19UITableViewDelegateP", "Cells"]
+- !private ["So19UITableViewDelegateP", "CellID"]
 - !private ["So19UITableViewDelegateP", "CustomTableViewCell"]
 - !private ["So19UITableViewDelegateP", "DispatchQueue"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
@@ -1339,7 +1321,6 @@ depends-member:
 - ["So19UITableViewDelegateP", "scrollViewWillEndDragging"]
 - ["So19UITableViewDelegateP", "sectionIndexTitles"]
 - ["So19UITableViewDelegateP", "sectionIndexTitlesForTableView"]
-- !private ["So19UITableViewDelegateP", "setUpNavigationBar"]
 - !private ["So19UITableViewDelegateP", "setUpTableView"]
 - ["So19UITableViewDelegateP", "tableView"]
 - ["So19UITableViewDelegateP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1349,7 +1330,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
 - ["So18UITraitEnvironmentP", "AlbumViewModel"]
 - !private ["So18UITraitEnvironmentP", "AppleITuneAPI"]
-- !private ["So18UITraitEnvironmentP", "Cells"]
+- !private ["So18UITraitEnvironmentP", "CellID"]
 - !private ["So18UITraitEnvironmentP", "CustomTableViewCell"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
@@ -1395,7 +1376,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "sectionIndexTitles"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UITraitEnvironmentP", "separatorColor"]
-- !private ["So18UITraitEnvironmentP", "setUpNavigationBar"]
 - !private ["So18UITraitEnvironmentP", "setUpTableView"]
 - ["So18UITraitEnvironmentP", "tableView"]
 - ["So18UITraitEnvironmentP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1406,7 +1386,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - ["So23UIUserActivityRestoringP", "AlbumViewModel"]
 - !private ["So23UIUserActivityRestoringP", "AppleITuneAPI"]
-- !private ["So23UIUserActivityRestoringP", "Cells"]
+- !private ["So23UIUserActivityRestoringP", "CellID"]
 - !private ["So23UIUserActivityRestoringP", "CustomTableViewCell"]
 - !private ["So23UIUserActivityRestoringP", "DispatchQueue"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
@@ -1452,7 +1432,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "sectionIndexTitles"]
 - ["So23UIUserActivityRestoringP", "sectionIndexTitlesForTableView"]
 - !private ["So23UIUserActivityRestoringP", "separatorColor"]
-- !private ["So23UIUserActivityRestoringP", "setUpNavigationBar"]
 - !private ["So23UIUserActivityRestoringP", "setUpTableView"]
 - ["So23UIUserActivityRestoringP", "tableView"]
 - ["So23UIUserActivityRestoringP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1478,7 +1457,7 @@ depends-member:
 - !private ["So6UIViewC", "separatorColor"]
 - ["So16UIViewControllerC", "AlbumViewModel"]
 - !private ["So16UIViewControllerC", "AppleITuneAPI"]
-- !private ["So16UIViewControllerC", "Cells"]
+- !private ["So16UIViewControllerC", "CellID"]
 - !private ["So16UIViewControllerC", "CustomTableViewCell"]
 - !private ["So16UIViewControllerC", "DispatchQueue"]
 - ["So16UIViewControllerC", "IndexPath"]
@@ -1527,7 +1506,7 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "AlbumViewModel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AppleITuneAPI"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Cells"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CellID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CustomTableViewCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -1577,7 +1556,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "separatorColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setUpNavigationBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setUpTableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1588,7 +1566,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AlbumViewModel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AppleITuneAPI"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Cells"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CellID"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CustomTableViewCell"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
@@ -1638,7 +1616,6 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sectionIndexTitles"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sectionIndexTitlesForTableView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "separatorColor"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setUpNavigationBar"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setUpTableView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1666,11 +1643,11 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "separatorColor"]
 depends-nominal:
 - "11Apple_Music14AlbumViewModelC"
-- !private "11Apple_Music0A8ITuneAPIV"
+- !private "11Apple_Music0A8ITuneAPIO"
 - !private "SK"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
-- "11Apple_Music18HomeViewControllerC5CellsV"
+- !private "11Apple_Music6CellIDO"
 - !private "Sl"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
@@ -2955,4 +2932,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fa8f68c605252442e211484784a2b5fe"
+interface-hash: "4c0881a7dcf133b4ca39d316c3ece3ba"

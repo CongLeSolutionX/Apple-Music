@@ -1,8 +1,12 @@
 /Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift
+/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Extensions/URL+DownloadImage.swift
 /Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumViewModel.swift
 /Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/View/CustomTableViewCell.swift
-/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Controllers/ViewController.swift
+/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIView+Constraints.swift
+/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Controllers/HomeViewController.swift
 /Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Model/Album.swift
 /Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/AppDelegate.swift
-/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Services/NetworkConnection.swift
+/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Model/CellID.swift
+/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumInfoViewModel.swift
+/Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Services/AlbumsService.swift
 /Users/congle/Desktop/DEVELOPMENTS/ENHANCE\ NOTES/NIKE/Apple-Music/Apple-Music/Controllers/DetailViewController.swift

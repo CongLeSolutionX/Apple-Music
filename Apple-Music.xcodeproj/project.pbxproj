@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C262C082450936600B2D21C /* CellID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C262C072450936600B2D21C /* CellID.swift */; };
 		4C97F2AB244C137A006D760F /* mockAlbum.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C97F2AA244C137A006D760F /* mockAlbum.json */; };
 		4C97F2AD244CF263006D760F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2AC244CF263006D760F /* Album.swift */; };
 		4C97F2B2244CFF3F006D760F /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2B1244CFF3F006D760F /* AlbumViewModel.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C262C072450936600B2D21C /* CellID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellID.swift; sourceTree = "<group>"; };
 		4C97F2AA244C137A006D760F /* mockAlbum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockAlbum.json; sourceTree = "<group>"; };
 		4C97F2AC244CF263006D760F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		4C97F2B1244CFF3F006D760F /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				4C97F2AC244CF263006D760F /* Album.swift */,
+				4C262C072450936600B2D21C /* CellID.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				4CD206C4244AC1F100560B93 /* HomeViewController.swift in Sources */,
 				4C97F2AD244CF263006D760F /* Album.swift in Sources */,
 				4CD206C0244AC1F100560B93 /* AppDelegate.swift in Sources */,
+				4C262C082450936600B2D21C /* CellID.swift in Sources */,
 				4CB9577B244EE6C200A00229 /* AlbumInfoViewModel.swift in Sources */,
 				4C97F2B5244D00B9006D760F /* AlbumsService.swift in Sources */,
 				4C97F2BC244D13A6006D760F /* DetailViewController.swift in Sources */,

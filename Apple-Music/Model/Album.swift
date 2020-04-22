@@ -17,7 +17,7 @@ struct AppleMusicAlbums: Codable {
 
 // MARK: - Feed
 struct Feed: Codable {
-    var title: String?
+    var title: String
     var id: String?
     var author: Author?
     var links: [Link]?
@@ -29,7 +29,7 @@ struct Feed: Codable {
 
 // MARK: - Author
 struct Author: Codable {
-    var name: String?
+    var name: String
     var uri: String?
 }
 
@@ -82,22 +82,3 @@ struct Genre: Codable {
 enum Kind: String, Codable {
     case album = "album"
 }
-
-
-//// MARK: - Genre
-//struct AppleMusicAlbum: Codable {
-//    let results: [Album]
-//}
-//
-//struct Album: Codable {
-//    let albumName: String
-//    let artist: String
-//    let artwork: String
-//    // cutomizing the name convention for codable, object must conform with Codingkey protocol
-//    private enum CodingKeys: String, CodingKey {
-//        case albumName = "name"
-//        case artist = "artistName"
-//        case artwork = "artworkUrl100"
-//    }
-//}
-

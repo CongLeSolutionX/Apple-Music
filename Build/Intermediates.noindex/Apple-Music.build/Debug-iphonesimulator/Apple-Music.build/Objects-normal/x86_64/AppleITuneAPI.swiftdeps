@@ -2,9 +2,9 @@
 provides-top-level:
 - "AppleITuneAPI"
 provides-nominal:
-- "11Apple_Music0A8ITuneAPIV"
+- "11Apple_Music0A8ITuneAPIO"
 provides-member:
-- ["11Apple_Music0A8ITuneAPIV", ""]
+- ["11Apple_Music0A8ITuneAPIO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
@@ -12,11 +12,10 @@ depends-top-level:
 - "StringLiteralType"
 - "URL"
 depends-member:
-- ["11Apple_Music0A8ITuneAPIV", "URL"]
-- ["11Apple_Music0A8ITuneAPIV", "base"]
-- ["11Apple_Music0A8ITuneAPIV", "getAlbumURL"]
-- ["11Apple_Music0A8ITuneAPIV", "init"]
-- ["11Apple_Music0A8ITuneAPIV", "topAlbums"]
+- ["11Apple_Music0A8ITuneAPIO", "URL"]
+- ["11Apple_Music0A8ITuneAPIO", "base"]
+- ["11Apple_Music0A8ITuneAPIO", "getAlbumURL"]
+- ["11Apple_Music0A8ITuneAPIO", "topAlbums"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["Se", "init"]
@@ -29,7 +28,7 @@ depends-member:
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
-- "11Apple_Music0A8ITuneAPIV"
+- "11Apple_Music0A8ITuneAPIO"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
@@ -1253,4 +1252,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4b9524a8e7b60b20366a3c03e00137cc"
+interface-hash: "aa1db15f44d67cfed4be82da2a46f19e"

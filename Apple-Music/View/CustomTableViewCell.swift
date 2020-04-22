@@ -65,27 +65,32 @@ class CustomTableViewCell: UITableViewCell {
     
     func setImageConstraints() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
-        albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor).isActive = true
-        albumImage.widthAnchor.constraint(equalToConstant: 108).isActive    = true
-        
-        albumImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12).isActive    = true
-        
-        albumImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12).isActive    = true
-        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: albumImage.bottomAnchor, constant: 12).isActive = true
+        NSLayoutConstraint.activate([
+        albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor),
+        albumImage.widthAnchor.constraint(equalToConstant: 108),
+        albumImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
+        albumImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
+        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: albumImage.bottomAnchor, constant: 12)
+        ])
     }
     
     func setAlbumNameLabelConstraints() {
         albumNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        albumNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 20).isActive = true
-        albumNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12).isActive = true
-        artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor, constant: 12).isActive    = true
+        
+        NSLayoutConstraint.activate([
+        albumNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 20),
+        albumNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
+        artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor, constant: 12)
+        ])
     }
     func setArtistNameLabelConstraints() {
         artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        artistNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 20).isActive = true
-        artistNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
-        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: artistNameLabel.bottomAnchor, constant: 12).isActive = true
+        NSLayoutConstraint.activate([
+        artistNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 20),
+        artistNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
+        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: artistNameLabel.bottomAnchor, constant: 12)
+        ])
     }
     
 }

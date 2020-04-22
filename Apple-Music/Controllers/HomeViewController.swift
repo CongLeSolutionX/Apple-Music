@@ -15,18 +15,18 @@ class HomeViewController: UIViewController  {
     
     var albumViewModel = AlbumViewModel()
     
-    struct Cells {
-        static let cellReuseIdendifier = "Cell"
-    }
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Apple Music Album"
+        self.title = "Apple Music Album"
+        
         guard let url = AppleITuneAPI.getAlbumURL() else { return  }
         albumViewModel.downloadAlbum(url)
         
-        setUpNavigationBar()
+        navigationItem.title = "Top 100 Music Albums"
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
         setUpTableView()
         
     }
@@ -40,16 +40,17 @@ class HomeViewController: UIViewController  {
         tableView.pin(to: view)
         tableView.delegate = self
         tableView.dataSource = self
-        // self-sizing cells dymanically 
-        tableView.estimatedRowHeight = 110.0
+        // self-sizing cells dymanically
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 50.0
+        
         
         tableView.backgroundColor = UIColor.blue
         tableView.separatorColor = UIColor.clear // remove the separator lines
             
         
         // get the reusable cells
-        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: Cells.cellReuseIdendifier)
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: CellID.cellReuseIdendifier)
        
         albumViewModel.updateView = { [weak self] in
             DispatchQueue.main.async {
@@ -75,7 +76,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.cellReuseIdendifier, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellID.cellReuseIdendifier, for: indexPath)
             as? CustomTableViewCell else {
             fatalError("cannot dequeue cell")
         }

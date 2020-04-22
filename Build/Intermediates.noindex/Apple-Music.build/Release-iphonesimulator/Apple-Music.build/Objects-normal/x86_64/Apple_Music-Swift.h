@@ -181,7 +181,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreGraphics;
 @import Foundation;
 @import UIKit;
 #endif
@@ -218,7 +217,6 @@ SWIFT_CLASS("_TtC11Apple_Music19CustomTableViewCell")
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 @end
 
 @class NSBundle;
@@ -231,8 +229,8 @@ SWIFT_CLASS("_TtC11Apple_Music20DetailViewController")
 @end
 
 
-SWIFT_CLASS("_TtC11Apple_Music14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC11Apple_Music18HomeViewController")
+@interface HomeViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -240,17 +238,17 @@ SWIFT_CLASS("_TtC11Apple_Music14ViewController")
 
 @class UITableView;
 
-@interface ViewController (SWIFT_EXTENSION(Apple_Music)) <UITableViewDelegate>
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@interface HomeViewController (SWIFT_EXTENSION(Apple_Music)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
-@interface ViewController (SWIFT_EXTENSION(Apple_Music)) <UITableViewDataSource>
+@interface HomeViewController (SWIFT_EXTENSION(Apple_Music)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

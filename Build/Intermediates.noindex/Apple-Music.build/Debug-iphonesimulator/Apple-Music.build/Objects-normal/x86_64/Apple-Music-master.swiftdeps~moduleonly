@@ -1,15 +1,16 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "7ebe123923d029249c82b5834d5d1020"
-build_time: [1587487986, 272203000]
+build_time: [1587567907, 995631000]
 inputs:
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1587471530, 0]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1587567591, 210500328]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/URL+DownloadImage.swift": [1587471530, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumViewModel.swift": [1587471530, 0]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/CustomTableViewCell.swift": [1587487584, 547827482]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIView+Constraints.swift": [1587471530, 0]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/HomeViewController.swift": [1587487020, 307150602]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Model/Album.swift": [1587471530, 0]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/CustomTableViewCell.swift": [1587567902, 808645384]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIView+Constraints.swift": [1587565420, 994652934]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/HomeViewController.swift": [1587567631, 831121279]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Model/Album.swift": [1587566803, 404121301]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/AppDelegate.swift": [1587471530, 0]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Model/CellID.swift": [1587567633, 100872203]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumInfoViewModel.swift": [1587471530, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AlbumsService.swift": [1587471530, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/DetailViewController.swift": [1587471530, 0]

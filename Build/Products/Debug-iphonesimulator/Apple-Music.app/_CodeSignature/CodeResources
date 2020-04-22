@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Assets.car</key>
-		<data>
-		tNKfMzD4ji1B45R0qkk9vSMCN7U=
-		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		yxLQ3b0q+R4s8CvUbLiLt9EEzNc=
+		EeMMf0e4x0Up/2MKBgek9Epfehc=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,7 +14,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		SY0bPPWxz2bu3YEDQCeq7u1nW+I=
+		hnrM40OnayMpM+f9OPo2bQ/5HWY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -35,18 +31,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			azqUACuDZcSdz5aMKLPSgxNqgRqX6U90Rs31qWVBQS4=
-			</data>
-		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SRAWfYiRQubae/WRe0kcY9DfwpCs4ofnzwaz76XqkqA=
+			1d7oS51VJlsbWkgSDN35KQLdREz/JApeUmVMYuXqzw4=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -60,7 +49,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2NVtW4GMiCri7ec4gwH+IJW9C7o3S2Tprlf8jRNXjgA=
+			UFl7amtwaTLc2wIjATSjOEUHm1MSZ38U+FDc73n9J0M=
 			</data>
 		</dict>
 		<key>mockAlbum.json</key>
