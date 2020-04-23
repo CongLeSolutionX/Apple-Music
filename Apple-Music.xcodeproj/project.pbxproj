@@ -68,8 +68,8 @@
 		4C97F2AF244CF2EA006D760F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */,
 				4C262C092450CFA600B2D21C /* CellsID.swift */,
+				4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

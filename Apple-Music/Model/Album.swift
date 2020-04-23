@@ -80,22 +80,3 @@ struct Genre: Codable {
 enum Kind: String, Codable {
     case album = "album"
 }
-
-
-//// MARK: - Genre
-//struct AppleMusicAlbum: Codable {
-//    let results: [Album]
-//}
-//
-//struct Album: Codable {
-//    let albumName: String
-//    let artist: String
-//    let artwork: String
-//    // cutomizing the name convention for codable, object must conform with Codingkey protocol
-//    private enum CodingKeys: String, CodingKey {
-//        case albumName = "name"
-//        case artist = "artistName"
-//        case artwork = "artworkUrl100"
-//    }
-//}
-

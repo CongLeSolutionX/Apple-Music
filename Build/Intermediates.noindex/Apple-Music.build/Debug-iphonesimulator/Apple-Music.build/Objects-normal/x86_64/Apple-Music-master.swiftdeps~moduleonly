@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "7ebe123923d029249c82b5834d5d1020"
-build_time: [1587584701, 523792000]
+build_time: [1587644915, 69219000]
 inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1587472983, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/CellsID.swift": [1587583043, 787385266]
@@ -10,8 +10,8 @@ inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIView+Constraints.swift": [1587566628, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/ImageService.swift": [1587560569, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/HomeViewController.swift": [1587583169, 741151100]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Model/Album.swift": [1587563292, 0]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Model/Album.swift": [1587625588, 910198482]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/AppDelegate.swift": [1587562246, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumInfoViewModel.swift": [1587563292, 0]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AlbumsService.swift": [1587472983, 0]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/DetailViewController.swift": [1587583167, 659581366]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/DetailViewController.swift": [1587644914, 977655796]
