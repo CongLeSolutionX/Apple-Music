@@ -92,8 +92,11 @@ depends-member:
 - !private ["SH", "compactMap"]
 - !private ["SH", "init"]
 - !private ["SH", "joined"]
+- !private ["11Apple_Music12ImageServiceC", "deinit"]
 - !private ["11Apple_Music12ImageServiceC", "download"]
 - !private ["11Apple_Music12ImageServiceC", "init"]
+- !private ["11Apple_Music20ImageServiceProviderP", "download"]
+- !private ["11Apple_Music20ImageServiceProviderP", "init"]
 - !private ["SM", "compactMap"]
 - !private ["SM", "joined"]
 - !private ["10Foundation19MutableDataProtocolP", "compactMap"]
@@ -138,6 +141,7 @@ depends-nominal:
 - !private "11Apple_Music5GenreV"
 - !private "SH"
 - !private "11Apple_Music12ImageServiceC"
+- !private "11Apple_Music20ImageServiceProviderP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "Sk"

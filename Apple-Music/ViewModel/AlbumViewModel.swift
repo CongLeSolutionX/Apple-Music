@@ -19,7 +19,7 @@ class AlbumViewModel {
         }
     }
     
-    init(service: NetworkService = NetworkConnection()) {
+    init(service: NetworkService = NetworkConnection(), imageService: ImageServiceProvider = ImageService()) {
         self.service = service
     }
  
@@ -43,7 +43,7 @@ class AlbumViewModel {
     }
     
     func getArtistName(_ index: Int) -> String {
-        return albums[index].artistName ?? "No artirst name"
+        return albums[index].artistName ?? "No artist name"
     }
     
     func getArtworkImage(_ index: Int, _ completion: @escaping (Data?) -> Void) {

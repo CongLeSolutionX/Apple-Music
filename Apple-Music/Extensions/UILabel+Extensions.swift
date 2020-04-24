@@ -8,6 +8,24 @@
 
 import UIKit
 
+
+extension CGFloat {
+    static let maxFontSize: CGFloat = 30.0
+}
+
+extension UIFont {
+    class var buttonFont: UIFont {
+        let pointSize = min(UIFont.TextStyle.callout.preferredSize, .maxFontSize)
+        return UIFont.systemFont(ofSize: pointSize)
+    }
+}
+
+extension UIFont.TextStyle {
+    var preferredSize: CGFloat {
+        return UIFont.preferredFont(forTextStyle: self).pointSize
+    }
+}
+
 extension UILabel {
     
     func baseTextConfigure() {
@@ -29,26 +47,16 @@ extension UILabel {
                      style: UIFont.TextStyle? = nil) {
         self.init()
         stylizeToCenter()
-        if let style = style {
-            let pointSize = UIFont.preferredFont(forTextStyle: style).pointSize
-           self.font = UIFont.boldSystemFont(ofSize: pointSize)
-        
-            
-        } else {
-            self.font = UIFont.boldSystemFont(ofSize: size)
-        }
+        let pointSize = min(style?.preferredSize ?? size, .maxFontSize)
+        self.font = UIFont.boldSystemFont(ofSize: pointSize)
     }
     
     convenience init(stylizedItalicLabelWithSizeCenterText size: CGFloat,
                      style: UIFont.TextStyle? = nil) {
         self.init()
         stylizeToCenter()
-        if let style = style {
-            let pointSize = UIFont.preferredFont(forTextStyle: style).pointSize
-            self.font = UIFont.italicSystemFont(ofSize: pointSize)
-        } else {
-            self.font = UIFont.italicSystemFont(ofSize: size)
-        }
+        let pointSize = min(style?.preferredSize ?? size, .maxFontSize)
+        self.font = UIFont.italicSystemFont(ofSize: pointSize)
     }
     
     convenience init (stylizedBoldLabelWithSizeLeftText size: CGFloat,
@@ -67,11 +75,7 @@ extension UILabel {
                       style: UIFont.TextStyle? = nil) {
         self.init()
         stylizeToLeft()
-        if let style = style {
-            let pointSize = UIFont.preferredFont(forTextStyle: style).pointSize
-            self.font = UIFont.italicSystemFont(ofSize: pointSize)
-        } else {
-            self.font = UIFont.italicSystemFont(ofSize: size)
-        }
+        let pointSize = min(style?.preferredSize ?? size, .maxFontSize)
+        self.font = UIFont.italicSystemFont(ofSize: pointSize)
     }
 }

@@ -14,6 +14,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Data"
 - "ImageService"
+- "ImageServiceProvider"
 - "Int"
 - !private "NetworkConnection"
 - "NetworkService"
@@ -31,6 +32,7 @@ depends-member:
 - ["11Apple_Music14AlbumViewModelC", "AlbumInfoViewModel"]
 - ["11Apple_Music14AlbumViewModelC", "Data"]
 - ["11Apple_Music14AlbumViewModelC", "ImageService"]
+- ["11Apple_Music14AlbumViewModelC", "ImageServiceProvider"]
 - ["11Apple_Music14AlbumViewModelC", "Int"]
 - !private ["11Apple_Music14AlbumViewModelC", "NetworkConnection"]
 - ["11Apple_Music14AlbumViewModelC", "NetworkService"]
@@ -143,8 +145,11 @@ depends-member:
 - !private ["SH", "name"]
 - !private ["SH", "subscript"]
 - !private ["SH", "success"]
+- !private ["11Apple_Music12ImageServiceC", "deinit"]
 - !private ["11Apple_Music12ImageServiceC", "download"]
 - ["11Apple_Music12ImageServiceC", "init"]
+- !private ["11Apple_Music20ImageServiceProviderP", "download"]
+- ["11Apple_Music20ImageServiceProviderP", "init"]
 - !private ["SM", "artistName"]
 - !private ["SM", "artworkUrl100"]
 - !private ["SM", "count"]
@@ -227,6 +232,7 @@ depends-nominal:
 - !private "11Apple_Music4FeedV"
 - "SH"
 - "11Apple_Music12ImageServiceC"
+- "11Apple_Music20ImageServiceProviderP"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
 - !private "11Apple_Music17NetworkConnectionC"
@@ -1457,4 +1463,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1b6ec39c464eb183af7720ac52326146"
+interface-hash: "bf2d4114696bd9fa615d295f079543f8"

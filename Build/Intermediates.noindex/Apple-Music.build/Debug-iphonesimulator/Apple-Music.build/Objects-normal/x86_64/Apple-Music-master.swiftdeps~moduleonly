@@ -1,14 +1,15 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "7ebe123923d029249c82b5834d5d1020"
-build_time: [1587714531, 393379000]
+build_time: [1587738253, 797746000]
 inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1587472983, 0]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UILabel+Extensions.swift": [1587709439, 475441573]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UILabel+Extensions.swift": [1587715362, 900531016]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/CellsID.swift": [1587583043, 787385266]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumViewModel.swift": [1587561196, 0]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/ImagePersister.swift": [1587737505, 434529985]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumViewModel.swift": [1587738251, 640719040]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/CustomTableViewCell.swift": [1587712960, 450878201]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIView+Extensions.swift": [1587713703, 825049033]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/ImageService.swift": [1587560569, 0]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/ImageService.swift": [1587737646, 715234118]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/HomeViewController.swift": [1587714531, 308959207]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Model/Album.swift": [1587625588, 910198482]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/AppDelegate.swift": [1587703837, 882052213]
