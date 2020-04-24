@@ -252,6 +252,10 @@ SWIFT_CLASS("_TtC11Apple_Music18HomeViewController")
 
 
 
+
+
+
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif

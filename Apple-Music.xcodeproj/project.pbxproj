@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		3F2BF917245073EE00B2CCA6 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BF916245073EE00B2CCA6 /* ImageService.swift */; };
 		4C262C0A2450CFA600B2D21C /* CellsID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C262C092450CFA600B2D21C /* CellsID.swift */; };
+		4C4C69F62452BB4300DD3CA8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C69F52452BB4300DD3CA8 /* UIColor+Extensions.swift */; };
+		4C4C69F82452C92900DD3CA8 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C69F72452C92900DD3CA8 /* UIImageView+Extension.swift */; };
 		4C97F2AB244C137A006D760F /* mockAlbum.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C97F2AA244C137A006D760F /* mockAlbum.json */; };
 		4C97F2AD244CF263006D760F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2AC244CF263006D760F /* Album.swift */; };
 		4C97F2B2244CFF3F006D760F /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2B1244CFF3F006D760F /* AlbumViewModel.swift */; };
 		4C97F2B5244D00B9006D760F /* AlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2B4244D00B9006D760F /* AlbumsService.swift */; };
 		4C97F2B7244D01DA006D760F /* AppleITuneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */; };
 		4C97F2BC244D13A6006D760F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F2BB244D13A6006D760F /* DetailViewController.swift */; };
-		4CB95777244EBA9B00A00229 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB95776244EBA9B00A00229 /* UIView+Constraints.swift */; };
-		4CB95779244ED5E800A00229 /* URL+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB95778244ED5E800A00229 /* URL+DownloadImage.swift */; };
+		4CB95777244EBA9B00A00229 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB95776244EBA9B00A00229 /* UIView+Extensions.swift */; };
 		4CB9577B244EE6C200A00229 /* AlbumInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB9577A244EE6C200A00229 /* AlbumInfoViewModel.swift */; };
+		4CBD74062451F33E0032E5B0 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD74052451F33E0032E5B0 /* UILabel+Extensions.swift */; };
 		4CD206C0244AC1F100560B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206BF244AC1F100560B93 /* AppDelegate.swift */; };
 		4CD206C4244AC1F100560B93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206C3244AC1F100560B93 /* HomeViewController.swift */; };
 		4CD206C9244AC1F300560B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206C8244AC1F300560B93 /* Assets.xcassets */; };
@@ -28,15 +30,17 @@
 /* Begin PBXFileReference section */
 		3F2BF916245073EE00B2CCA6 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		4C262C092450CFA600B2D21C /* CellsID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsID.swift; sourceTree = "<group>"; };
+		4C4C69F52452BB4300DD3CA8 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4C4C69F72452C92900DD3CA8 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		4C97F2AA244C137A006D760F /* mockAlbum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockAlbum.json; sourceTree = "<group>"; };
 		4C97F2AC244CF263006D760F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		4C97F2B1244CFF3F006D760F /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
 		4C97F2B4244D00B9006D760F /* AlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsService.swift; sourceTree = "<group>"; };
 		4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleITuneAPI.swift; sourceTree = "<group>"; };
 		4C97F2BB244D13A6006D760F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		4CB95776244EBA9B00A00229 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
-		4CB95778244ED5E800A00229 /* URL+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+DownloadImage.swift"; sourceTree = "<group>"; };
+		4CB95776244EBA9B00A00229 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4CB9577A244EE6C200A00229 /* AlbumInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfoViewModel.swift; sourceTree = "<group>"; };
+		4CBD74052451F33E0032E5B0 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		4CD206BC244AC1F100560B93 /* Apple-Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD206BF244AC1F100560B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD206C3244AC1F100560B93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				4C97F2B4244D00B9006D760F /* AlbumsService.swift */,
-				4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */,
 				3F2BF916245073EE00B2CCA6 /* ImageService.swift */,
+				4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -105,8 +109,10 @@
 		4CB95775244EBA6100A00229 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4CB95776244EBA9B00A00229 /* UIView+Constraints.swift */,
-				4CB95778244ED5E800A00229 /* URL+DownloadImage.swift */,
+				4CB95776244EBA9B00A00229 /* UIView+Extensions.swift */,
+				4CBD74052451F33E0032E5B0 /* UILabel+Extensions.swift */,
+				4C4C69F52452BB4300DD3CA8 /* UIColor+Extensions.swift */,
+				4C4C69F72452C92900DD3CA8 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,16 +223,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C97F2B7244D01DA006D760F /* AppleITuneAPI.swift in Sources */,
+				4CBD74062451F33E0032E5B0 /* UILabel+Extensions.swift in Sources */,
 				4C262C0A2450CFA600B2D21C /* CellsID.swift in Sources */,
-				4CB95779244ED5E800A00229 /* URL+DownloadImage.swift in Sources */,
 				4C97F2B2244CFF3F006D760F /* AlbumViewModel.swift in Sources */,
 				4CD206D4244B00D300560B93 /* CustomTableViewCell.swift in Sources */,
-				4CB95777244EBA9B00A00229 /* UIView+Constraints.swift in Sources */,
+				4CB95777244EBA9B00A00229 /* UIView+Extensions.swift in Sources */,
 				3F2BF917245073EE00B2CCA6 /* ImageService.swift in Sources */,
 				4CD206C4244AC1F100560B93 /* HomeViewController.swift in Sources */,
 				4C97F2AD244CF263006D760F /* Album.swift in Sources */,
 				4CD206C0244AC1F100560B93 /* AppDelegate.swift in Sources */,
 				4CB9577B244EE6C200A00229 /* AlbumInfoViewModel.swift in Sources */,
+				4C4C69F82452C92900DD3CA8 /* UIImageView+Extension.swift in Sources */,
+				4C4C69F62452BB4300DD3CA8 /* UIColor+Extensions.swift in Sources */,
 				4C97F2B5244D00B9006D760F /* AlbumsService.swift in Sources */,
 				4C97F2BC244D13A6006D760F /* DetailViewController.swift in Sources */,
 			);

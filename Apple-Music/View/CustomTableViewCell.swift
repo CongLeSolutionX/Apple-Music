@@ -12,16 +12,16 @@ class CustomTableViewCell: UITableViewCell {
     
     lazy var albumImage: UIImageView = {
         let albumImage = UIImageView()
-        albumImage.contentMode = .scaleAspectFill
+        albumImage.configureCornerRadius()
         return albumImage
     }()
     
     lazy var albumNameLabel: UILabel = {
-        return UILabel(stylizedBoldLabelWithSize: 18, style: .headline)
+        return UILabel(stylizedBoldLabelWithSizeLeftText: 18, style: .headline)
     }()
     
     lazy var artistNameLabel: UILabel = {
-        return UILabel(stylizedItalicLabelWithSize: 15, style: .subheadline)
+        return UILabel(stylizedItalicLabelWithSizeLeftText: 15, style: .subheadline)
     }()
     
     var albumInfoViewModel: AlbumInfoViewModel? {
@@ -35,7 +35,7 @@ class CustomTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addUIElements()
         contentView.backgroundColor = .red
-        selectionStyle = .none
+        selectionStyle = .blue
     }
     
     required init?(coder: NSCoder) {
@@ -92,7 +92,7 @@ class CustomTableViewCell: UITableViewCell {
         albumNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,
                                                  constant: -12).isActive = true
         artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor,
-                                             constant: 12).isActive    = true
+                                             constant: 5).isActive    = true
     }
     func setArtistNameLabelConstraints() {
         artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
