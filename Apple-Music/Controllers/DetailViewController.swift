@@ -10,34 +10,34 @@ import UIKit
 import StoreKit
 
 class DetailViewController: UIViewController {
-    
+    // MARK: - UI elements
     lazy var albumImage: UIImageView = {
         let albumImage = UIImageView()
         albumImage.configureCornerRadius()
-       // albumImage.addingRedShadow()
+        // albumImage.addingRedShadow()
         
         return albumImage
     }()
     
     lazy var albumNameLabel: UILabel = {
-        return UILabel(stylizedBoldLabelWithSizeCenterText: 15, style: .largeTitle)
+        return UILabel(stylizedBoldLabelWithSizeCenterText: 20, style: .largeTitle)
         
     }()
     
     lazy var artistNameLabel: UILabel = {
-        return UILabel(stylizedItalicLabelWithSizeCenterText: 15, style: .headline)
+        return UILabel(stylizedItalicLabelWithSizeCenterText: 20, style: .headline)
     }()
     
     lazy var genreLabel: UILabel = {
-        return UILabel(stylizedItalicLabelWithSizeCenterText: 15, style: .caption1)
+        return UILabel(stylizedItalicLabelWithSizeCenterText: 20, style: .body)
     }()
     
     lazy var releaseDateLabel: UILabel = {
-        return UILabel(stylizedItalicLabelWithSizeCenterText: 15, style: .caption1)
+        return UILabel(stylizedItalicLabelWithSizeCenterText: 20, style: .body)
     }()
     
     lazy var copyrightInfoLabel: UILabel = {
-        return UILabel(stylizedItalicLabelWithSizeCenterText: 15, style: .caption1)
+        return UILabel(stylizedItalicLabelWithSizeCenterText: 20, style: .body)
     }()
     
     lazy var linkoutButton: UIButton = {
@@ -49,9 +49,13 @@ class DetailViewController: UIViewController {
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
         button.titleLabel?.stylizeToCenter(alignment: .center)
         button.backgroundColor = .blue
-        button.layer.cornerRadius = 5
+        
+        button.layer.cornerRadius = 10
         return button
     }()
+    
+    let scrollView = UIScrollView()
+    
     let stackView = UIStackView()
     
     var albumInfoViewModel: AlbumInfoViewModel? {
@@ -60,41 +64,71 @@ class DetailViewController: UIViewController {
             bindData()
         }
     }
-    
+    // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         addUIElements()
-        view.backgroundColor = .white
+        view.backgroundColor = .green
         title = "Album Details"
     }
-    
+    // MARK: - Methods
     func addUIElements() {
-        view.addSubview(albumImage)
+        view.addSubview(scrollView)
+        setScrollViewConstraints()
+        setupStackView()
         view.addSubview(linkoutButton)
-        view.addSubview(albumNameLabel)
-        view.addSubview(artistNameLabel)
-        view.addSubview(genreLabel)
-        view.addSubview(releaseDateLabel)
-        view.addSubview(copyrightInfoLabel)
-        setImageConstraints()
-        setAlbumNameLabelConstraints()
-        setArtistNameLabelConstraints()
-        setGenreLabelConstraints()
-        setReleaseDateLabelConstraints()
-        setCopyrightInfoLabelConstraints()
         setLinkoutButtonConstraints()
     }
     
+    func setScrollViewConstraints() {
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.topAnchor.constraint(equalTo: view.topAnchor,
+                                               constant: 20).isActive = true
+        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor,
+                                            constant: 20).isActive = true
+       
+        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor,
+                                             constant: -20).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor,
+                                           constant: 20).isActive = true
+        // hide the scroll view indicator 
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+   
+ 
+    }
+    func setupStackView() {
+        scrollView.addSubview(stackView)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        
+        // constrain stack view to scroll view
+        stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 20).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant:  -40).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        
+        stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+//        stackView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        
+        // adding UI elements into stackview
+        stackView.addArrangedSubview(albumImage)
+        setImageConstraints()
+        stackView.addArrangedSubview(albumNameLabel)
+        setAlbumNameLabelConstraints()
+        stackView.addArrangedSubview(artistNameLabel)
+        stackView.addArrangedSubview(genreLabel)
+        stackView.addArrangedSubview(releaseDateLabel)
+        stackView.addArrangedSubview(copyrightInfoLabel)
+      
+    }
     func setImageConstraints() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
         albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor).isActive = true
-        
-        albumImage.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                            constant: 12).isActive    = true
-        albumImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                                        constant: 12).isActive    = true
-        albumImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12).isActive = true
-     //   albumImage.bottomAnchor.constraint(equalTo: albumNameLabel.topAnchor, constant: 12).isActive = true
+        albumImage.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
+        albumImage.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
+        albumImage.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
     }
     
     
@@ -102,32 +136,15 @@ class DetailViewController: UIViewController {
         albumNameLabel.translatesAutoresizingMaskIntoConstraints = false
         albumNameLabel.topAnchor.constraint(equalTo: albumImage.bottomAnchor,
                                             constant: 10).isActive    = true
-        albumNameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                                constant: 20).isActive = true
-        albumNameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                                 constant: -20).isActive = true
     }
     
     
     func setArtistNameLabelConstraints() {
         artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        artistNameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                                 constant: 20).isActive = true
-        artistNameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                                  constant: -20).isActive = true
-        artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor,
-                                             constant: 5).isActive    = true
-
     }
     
     func setGenreLabelConstraints() {
         genreLabel.translatesAutoresizingMaskIntoConstraints = false
-        genreLabel.topAnchor.constraint(equalTo: artistNameLabel.bottomAnchor,
-                                        constant: 5).isActive = true
-        genreLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                            constant: 20).isActive = true
-        genreLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                             constant: -20).isActive = true
     }
     
     func setReleaseDateLabelConstraints() {
@@ -148,17 +165,17 @@ class DetailViewController: UIViewController {
                                                     constant: 12).isActive = true
         copyrightInfoLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,
                                                      constant: -12).isActive = true
+      //e  copyrightInfoLabel.bottomAnchor.constraint(equalTo: linkoutButton.topAnchor).isActive = true
     }
     
     func setLinkoutButtonConstraints() {
         linkoutButton.translatesAutoresizingMaskIntoConstraints = false
-        linkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                               constant: 20).isActive = true
-        linkoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                                constant: -20).isActive = true
-        linkoutButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: linkoutButton.bottomAnchor,
-                                                         constant: 20).isActive = true
+        linkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        linkoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        linkoutButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20).isActive = true
+    
+        linkoutButton.center.x = self.view.center.x // horizontally centered
+      
     }
     
     func bindData() {

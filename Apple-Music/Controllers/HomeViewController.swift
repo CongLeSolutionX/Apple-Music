@@ -40,6 +40,7 @@ class HomeViewController: UIViewController  {
         tableView.estimatedRowHeight = 100.0
         tableView.backgroundColor = UIColor.red
         tableView.separatorStyle = .none
+        tableView.allowsSelection = true
         
         // get the reusable cells
         tableView.register(CustomTableViewCell.self,
@@ -58,7 +59,16 @@ extension HomeViewController: UITableViewDelegate {
         let detailVC = DetailViewController()
         detailVC.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
         navigationController?.pushViewController(detailVC, animated: true)
-        
+       if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
+            cell.contentView.backgroundColor = UIColor.blue
+        }
+    }
+    
+    // didDeselectRowAtIndexPath - change background color
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
+            cell.contentView.backgroundColor = UIColor.red
+        }
     }
 }
 // MARK: - TableViewDataSource
@@ -72,7 +82,7 @@ extension HomeViewController: UITableViewDataSource {
             as? CustomTableViewCell else {
                 fatalError("Cannot dequeue cell")
         }
-        
+        cell.contentView.backgroundColor = cell.isSelected ? UIColor.blue : UIColor.red
         cell.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
         
         return cell

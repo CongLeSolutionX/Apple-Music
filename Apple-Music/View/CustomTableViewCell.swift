@@ -16,12 +16,16 @@ class CustomTableViewCell: UITableViewCell {
         return albumImage
     }()
     
+    lazy var labelContainer: UIView = {
+       return UIView()
+    }()
+    
     lazy var albumNameLabel: UILabel = {
-        return UILabel(stylizedBoldLabelWithSizeLeftText: 18, style: .headline)
+        return UILabel(stylizedBoldLabelWithSizeLeftText: 20, style: .headline)
     }()
     
     lazy var artistNameLabel: UILabel = {
-        return UILabel(stylizedItalicLabelWithSizeLeftText: 15, style: .subheadline)
+        return UILabel(stylizedItalicLabelWithSizeLeftText: 20, style: .subheadline)
     }()
     
     var albumInfoViewModel: AlbumInfoViewModel? {
@@ -44,9 +48,11 @@ class CustomTableViewCell: UITableViewCell {
     
     func addUIElements() {
         contentView.addSubview(albumImage)
-        contentView.addSubview(albumNameLabel)
-        contentView.addSubview(artistNameLabel)
+        labelContainer.addSubview(albumNameLabel)
+        labelContainer.addSubview(artistNameLabel)
+        contentView.addSubview(labelContainer)
         setImageConstraints()
+        setLabelContainerConstraints()
         setAlbumNameLabelConstraints()
         setArtistNameLabelConstraints()
     }
@@ -87,22 +93,24 @@ class CustomTableViewCell: UITableViewCell {
     
     func setAlbumNameLabelConstraints() {
         albumNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        albumNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor,
-                                                constant: 20).isActive = true
-        albumNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,
-                                                 constant: -12).isActive = true
-        artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor,
-                                             constant: 5).isActive    = true
+        albumNameLabel.leadingAnchor.constraint(equalTo: labelContainer.leadingAnchor, constant: 0).isActive = true
+        albumNameLabel.trailingAnchor.constraint(equalTo: labelContainer.trailingAnchor, constant: 0).isActive = true
+        albumNameLabel.topAnchor.constraint(equalTo: labelContainer.topAnchor, constant: 0).isActive = true
     }
     func setArtistNameLabelConstraints() {
-        artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        artistNameLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor,
-                                                 constant: 20).isActive = true
-        artistNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor,
-                                                  constant: -12).isActive = true
-        contentView.bottomAnchor.constraint(greaterThanOrEqualTo: artistNameLabel.bottomAnchor,
-                                            constant: 12).isActive = true
+        artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        artistNameLabel.leadingAnchor.constraint(equalTo: labelContainer.leadingAnchor, constant: 0).isActive = true
+        artistNameLabel.trailingAnchor.constraint(equalTo: labelContainer.trailingAnchor, constant: 0).isActive = true
+        artistNameLabel.bottomAnchor.constraint(equalTo: labelContainer.bottomAnchor, constant: 0).isActive = true
+        artistNameLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor, constant: 5).isActive = true
+    }
+    
+    func setLabelContainerConstraints() {
+        labelContainer.translatesAutoresizingMaskIntoConstraints = false
+        labelContainer.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 20).isActive = true
+        labelContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12).isActive = true
+        labelContainer.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
     
 }

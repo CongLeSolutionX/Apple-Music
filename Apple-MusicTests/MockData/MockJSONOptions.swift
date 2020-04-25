@@ -20,7 +20,7 @@ enum MockJSONOptions: String {
 extension MockJSONOptions {
     var path: String {
         guard let path = Bundle.test.path(forResource: self.rawValue, ofType: "json") else {
-            fatalError("Error: mock json d")
+            fatalError("Error: mock json")
         }
         return path
     }

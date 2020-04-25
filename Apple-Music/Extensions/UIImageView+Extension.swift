@@ -12,7 +12,7 @@ extension UIImageView {
     func configureCornerRadius(){
         contentMode = .scaleAspectFit
         clipsToBounds = true
-        layer.cornerRadius = 10.0
+        layer.cornerRadius = 10.0 
     }
 }
 
