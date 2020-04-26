@@ -49,14 +49,26 @@ class DetailViewController: UIViewController {
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
         button.titleLabel?.stylizeToCenter(alignment: .center)
         button.backgroundColor = .blue
-        
-        button.layer.cornerRadius = 10
+        button.layer.cornerRadius = 5
         return button
     }()
     
-    let scrollView = UIScrollView()
+    lazy var scrollView : UIScrollView = {
+        let scrollView = UIScrollView()
+        // hide the scroll view indicator
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        return scrollView
+    }()
     
-    let stackView = UIStackView()
+    lazy var stackViewVertically : UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        return stackView
+    }()
+    
+    let stackViewHorizontally = UIStackView()
     
     var albumInfoViewModel: AlbumInfoViewModel? {
         didSet {
@@ -73,61 +85,52 @@ class DetailViewController: UIViewController {
     }
     // MARK: - Methods
     func addUIElements() {
-        view.addSubview(scrollView)
-        setScrollViewConstraints()
-        setupStackView()
         view.addSubview(linkoutButton)
         setLinkoutButtonConstraints()
+        view.addSubview(scrollView)
+        setScrollViewConstraints()
+        setupStackViewVertically()
     }
     
     func setScrollViewConstraints() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.topAnchor.constraint(equalTo: view.topAnchor,
+        scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
                                         constant: 20).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor,
                                             constant: 20).isActive = true
         
         scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor,
                                              constant: -20).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor,
-                                           constant: 20).isActive = true
-        // hide the scroll view indicator 
-        scrollView.showsVerticalScrollIndicator = false
-        scrollView.showsHorizontalScrollIndicator = false
-        
-        
+        scrollView.bottomAnchor.constraint(equalTo: linkoutButton.topAnchor).isActive = true
     }
-    func setupStackView() {
-        scrollView.addSubview(stackView)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 10
+    func setupStackViewVertically() {
+        scrollView.addSubview(stackViewVertically)
+        stackViewVertically.translatesAutoresizingMaskIntoConstraints = false
         
         // constrain stack view to scroll view
-        stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 20).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant:  -40).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        stackViewVertically.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+        stackViewVertically.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+        stackViewVertically.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        stackViewVertically.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         
-        stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        stackViewVertically.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         
         // adding UI elements into stackview
-        stackView.addArrangedSubview(albumImage)
+        stackViewVertically.addArrangedSubview(albumImage)
         setImageConstraints()
-        stackView.addArrangedSubview(albumNameLabel)
+        stackViewVertically.addArrangedSubview(albumNameLabel)
         setAlbumNameLabelConstraints()
-        stackView.addArrangedSubview(artistNameLabel)
-        stackView.addArrangedSubview(genreLabel)
-        stackView.addArrangedSubview(releaseDateLabel)
-        stackView.addArrangedSubview(copyrightInfoLabel)
-        
+        stackViewVertically.addArrangedSubview(artistNameLabel)
+        stackViewVertically.addArrangedSubview(genreLabel)
+        stackViewVertically.addArrangedSubview(releaseDateLabel)
+        stackViewVertically.addArrangedSubview(copyrightInfoLabel)
     }
     func setImageConstraints() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
         albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor).isActive = true
-        albumImage.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
-        albumImage.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
-        albumImage.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
+        albumImage.topAnchor.constraint(equalTo: stackViewVertically.topAnchor).isActive = true
+        albumImage.leadingAnchor.constraint(equalTo: stackViewVertically.leadingAnchor).isActive = true
+        albumImage.trailingAnchor.constraint(equalTo: stackViewVertically.trailingAnchor).isActive = true
     }
     
     
@@ -138,12 +141,11 @@ class DetailViewController: UIViewController {
     }
     
     func setLinkoutButtonConstraints() {
+        //        stackViewHorizontally.addSubview(linkoutButton)
         linkoutButton.translatesAutoresizingMaskIntoConstraints = false
         linkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         linkoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        linkoutButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20).isActive = true
-        
-        linkoutButton.center.x = self.view.center.x // horizontally centered
+        linkoutButton.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -20).isActive = true
         
     }
     
@@ -177,14 +179,13 @@ class DetailViewController: UIViewController {
         guard let url = albumInfoViewModel?.linkoutUrl else {
             return
         }
-        let alertPopup = UIAlertController(title: "Open in Safari", message: "We are leaving this app and open iTunes in Safari", preferredStyle: .actionSheet)
-        let confirmation = UIAlertAction(title: "Confirm", style: UIAlertAction.Style.default, handler: {(action) -> Void in
+        let alertPopup = UIAlertController(title: "Open iTunes in Safari", message: "We are leaving this app and open iTunes in Safari", preferredStyle: .actionSheet)
+        let confirmation = UIAlertAction(title: "I'm ok with that", style: UIAlertAction.Style.default, handler: {(action) -> Void in
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
                 print("Cant open the iTunes URL")
             }
-            
         })
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil)
         
@@ -193,8 +194,6 @@ class DetailViewController: UIViewController {
         alertPopup.fixNegativeConstraintError()
         
         present(alertPopup, animated: true, completion:  nil  )
-        
-        
     }
     
 }

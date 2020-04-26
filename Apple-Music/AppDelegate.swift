@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController = UINavigationController(rootViewController: HomeVC)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
-      //  window?.backgroundColor = .white
+        window?.backgroundColor = .white
         
         return true
     }
