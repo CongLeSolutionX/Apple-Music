@@ -83,10 +83,10 @@ class DetailViewController: UIViewController {
     func setScrollViewConstraints() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.topAnchor.constraint(equalTo: view.topAnchor,
-                                               constant: 20).isActive = true
+                                        constant: 20).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor,
                                             constant: 20).isActive = true
-       
+        
         scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor,
                                              constant: -20).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor,
@@ -94,8 +94,8 @@ class DetailViewController: UIViewController {
         // hide the scroll view indicator 
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
-   
- 
+        
+        
     }
     func setupStackView() {
         scrollView.addSubview(stackView)
@@ -110,7 +110,6 @@ class DetailViewController: UIViewController {
         stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         
         stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-//        stackView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         
         // adding UI elements into stackview
         stackView.addArrangedSubview(albumImage)
@@ -121,7 +120,7 @@ class DetailViewController: UIViewController {
         stackView.addArrangedSubview(genreLabel)
         stackView.addArrangedSubview(releaseDateLabel)
         stackView.addArrangedSubview(copyrightInfoLabel)
-      
+        
     }
     func setImageConstraints() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
@@ -138,44 +137,14 @@ class DetailViewController: UIViewController {
                                             constant: 10).isActive    = true
     }
     
-    
-    func setArtistNameLabelConstraints() {
-        artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
-    }
-    
-    func setGenreLabelConstraints() {
-        genreLabel.translatesAutoresizingMaskIntoConstraints = false
-    }
-    
-    func setReleaseDateLabelConstraints() {
-        releaseDateLabel.translatesAutoresizingMaskIntoConstraints = false
-        releaseDateLabel.topAnchor.constraint(equalTo: genreLabel.bottomAnchor,
-                                              constant: 12).isActive = true
-        releaseDateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                                  constant: 12).isActive = true
-        releaseDateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                                   constant: -12).isActive = true
-    }
-    
-    func setCopyrightInfoLabelConstraints() {
-        copyrightInfoLabel.translatesAutoresizingMaskIntoConstraints = false
-        copyrightInfoLabel.topAnchor.constraint(equalTo: releaseDateLabel.bottomAnchor,
-                                                constant: 12).isActive = true
-        copyrightInfoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                                    constant: 12).isActive = true
-        copyrightInfoLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                                     constant: -12).isActive = true
-      //e  copyrightInfoLabel.bottomAnchor.constraint(equalTo: linkoutButton.topAnchor).isActive = true
-    }
-    
     func setLinkoutButtonConstraints() {
         linkoutButton.translatesAutoresizingMaskIntoConstraints = false
         linkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         linkoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         linkoutButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20).isActive = true
-    
+        
         linkoutButton.center.x = self.view.center.x // horizontally centered
-      
+        
     }
     
     func bindData() {
@@ -208,11 +177,24 @@ class DetailViewController: UIViewController {
         guard let url = albumInfoViewModel?.linkoutUrl else {
             return
         }
-        if UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            print("Cant open the iTunes URL")
-        }
+        let alertPopup = UIAlertController(title: "Open in Safari", message: "We are leaving this app and open iTunes in Safari", preferredStyle: .actionSheet)
+        let confirmation = UIAlertAction(title: "Confirm", style: UIAlertAction.Style.default, handler: {(action) -> Void in
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                print("Cant open the iTunes URL")
+            }
+            
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil)
+        
+        alertPopup.addAction(confirmation)
+        alertPopup.addAction(cancel)
+        alertPopup.fixNegativeConstraintError()
+        
+        present(alertPopup, animated: true, completion:  nil  )
+        
+        
     }
     
 }

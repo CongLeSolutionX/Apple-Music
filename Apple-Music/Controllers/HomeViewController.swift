@@ -38,7 +38,7 @@ class HomeViewController: UIViewController  {
         // self-sizing cells
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100.0
-        tableView.backgroundColor = UIColor.red
+        tableView.backgroundColor = UIColor.white
         tableView.separatorStyle = .none
         tableView.allowsSelection = true
         
@@ -60,14 +60,14 @@ extension HomeViewController: UITableViewDelegate {
         detailVC.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
         navigationController?.pushViewController(detailVC, animated: true)
        if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
-            cell.contentView.backgroundColor = UIColor.blue
+            cell.contentView.backgroundColor = UIColor.gray
         }
     }
     
     // didDeselectRowAtIndexPath - change background color
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
-            cell.contentView.backgroundColor = UIColor.red
+            cell.contentView.backgroundColor = UIColor.white
         }
     }
 }
@@ -82,7 +82,9 @@ extension HomeViewController: UITableViewDataSource {
             as? CustomTableViewCell else {
                 fatalError("Cannot dequeue cell")
         }
-        cell.contentView.backgroundColor = cell.isSelected ? UIColor.blue : UIColor.red
+        // set color for cell background
+        cell.contentView.backgroundColor = cell.isSelected ? UIColor.gray : UIColor.white
+        // get data for each cell
         cell.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
         
         return cell
