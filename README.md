@@ -25,7 +25,7 @@ This app is built based on the following criteria:
     	- Beneath the artwork image, displays the album name, the artist name, genre, release date, and copyright. 
     	- Contains a button that when tapped fast app switches to the album page in the iTunes store.
     	- The button should be centered horizontally and pinned 20 points from the bottom of the view and 20 points from the leading and trailing edges of the view. 
-- Unit tests overall covers 95.4% using the mock data and test on all main functionalities of the app. 
+- Unit tests check all the main functionalities of the app and covers 93.8% of AlbumViewModel and cover 72.1% of AlbumInfoViewModel via using the mock data. 
 - Using mock JSON options, data loader, nil loader, bad album loader, this app perform mock unit tests on the following modules:
 	- Tests for AlbumInfoViewmodel: provides 2 sets of mock data (1 good and 1 bad data) to check if the Album have all the valid properties like: albumname, artistName, genre, releaseDate, copyrightInfo, linkoutUrl to iTunes. 
     - Tests for Album: check if the app can load data into one single Album object and load multiple Album types into an array.
@@ -43,8 +43,7 @@ This app is built based on the following criteria:
 - Implementing ImageService that can handle the following tasks: 
 	- Downloading image using url from Apple API endpoints
     - Applying lock method while downloading the images in the background to avoid race condition in the multithreading environment
-    - Caching the frequent used image via saving the image name into cachesDirectory in file system persistently on disk. 
-    - Encrypting each cached image name with unique key by using djbHashString algorithm.
+    - Caching the frequent used image via saving the image name into cachesDirectory in file system persistently on disk.
 
 ## Screenshots 
 ### Portrait Mode: 
@@ -73,9 +72,9 @@ This app is built based on the following criteria:
 
 ### Landscape Mode: 
 
-<img align="center" src="Screenshots/Landscape-1.png" width="600" height="320" title="Landscape-1">
-<img align="center" src="Screenshots/Landscape-2.png" width="600" height="320" title="Landscape-2">
-<img align="center" src="Screenshots/Landscape-3.png" width="600" height="320"  title="Landscape-3">
+<img align="right" src="Screenshots/Landscape-1.png" width="600" height="320" title="Landscape-1">
+<img align="right" src="Screenshots/Landscape-2.png" width="600" height="320" title="Landscape-2">
+<img align="right" src="Screenshots/Landscape-3.png" width="600" height="320"  title="Landscape-3">
 
 
 

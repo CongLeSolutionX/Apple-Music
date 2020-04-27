@@ -9,6 +9,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "AppleMusicAlbums"
 - "AssignmentPrecedence"
+- !private "CastingPrecedence"
+- !private "Data"
 - "Decodable"
 - "Error"
 - !private "FloatLiteralType"
@@ -34,6 +36,7 @@ depends-member:
 - !private ["10Foundation11JSONDecoderC", "decode"]
 - !private ["10Foundation11JSONDecoderC", "init"]
 - !private ["16Apple_MusicTests14MockJSONLoaderC", "AppleMusicAlbums"]
+- !private ["16Apple_MusicTests14MockJSONLoaderC", "Data"]
 - ["16Apple_MusicTests14MockJSONLoaderC", "Decodable"]
 - ["16Apple_MusicTests14MockJSONLoaderC", "Error"]
 - ["16Apple_MusicTests14MockJSONLoaderC", "JSONDecoder"]

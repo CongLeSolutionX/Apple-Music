@@ -31,7 +31,6 @@ class NetworkConnection: NetworkService {
             if let httpResponse = response as? HTTPURLResponse {
                 // if we receive a valid response code,
                 if  (200...299).contains(httpResponse.statusCode) {
-                    print("Valid HTTPS status code is below")
                     print(httpResponse.value(forHTTPHeaderField: "Status") ?? "No Valid Status")
                     // then, get the data from the server
                     if let data = dat {
@@ -45,7 +44,6 @@ class NetworkConnection: NetworkService {
                     }
                 }
                 else {
-                    print("error with the server with the following status:")
                     print(httpResponse.value(forHTTPHeaderField: "Status") ?? "No Valid Status")
                     completion(.failure(.init()))
                     return

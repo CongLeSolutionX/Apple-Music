@@ -14,11 +14,11 @@ provides-dynamic-lookup:
 depends-top-level:
 - "=="
 - "Bundle"
-- "Data"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "MockJSONLoader"
 - "MockJSONOptions"
+- "NSData"
 - "String"
 - "StringLiteralType"
 - "URL"
@@ -38,26 +38,23 @@ depends-member:
 - !private ["s7CVarArgP", "path"]
 - !private ["s7CVarArgP", "test"]
 - !private ["Sl", "init"]
-- !private ["10Foundation15ContiguousBytesP", "init"]
 - ["s28CustomDebugStringConvertibleP", "Bundle"]
 - ["s28CustomDebugStringConvertibleP", "MockJSONLoader"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "path"]
 - !private ["s28CustomDebugStringConvertibleP", "test"]
-- !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "Bundle"]
 - ["s23CustomStringConvertibleP", "MockJSONLoader"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "path"]
 - !private ["s23CustomStringConvertibleP", "test"]
-- !private ["10Foundation4DataV", "init"]
 - !private ["10Foundation12DataProtocolP", "init"]
 - !private ["Se", "init"]
 - !private ["SE", "init"]
 - ["SQ", "=="]
 - ["SQ", "Bundle"]
-- !private ["SQ", "Data"]
 - ["SQ", "MockJSONLoader"]
+- !private ["SQ", "NSData"]
 - ["SQ", "RawValue"]
 - !private ["SQ", "URL"]
 - ["SQ", ""]
@@ -74,8 +71,8 @@ depends-member:
 - !private ["SQ", "url"]
 - ["SH", "=="]
 - ["SH", "Bundle"]
-- !private ["SH", "Data"]
 - ["SH", "MockJSONLoader"]
+- !private ["SH", "NSData"]
 - ["SH", "RawValue"]
 - !private ["SH", "URL"]
 - ["SH", ""]
@@ -92,7 +89,7 @@ depends-member:
 - !private ["SH", "url"]
 - ["16Apple_MusicTests15MockJSONOptionsO", "=="]
 - !private ["16Apple_MusicTests15MockJSONOptionsO", "Bundle"]
-- ["16Apple_MusicTests15MockJSONOptionsO", "Data"]
+- ["16Apple_MusicTests15MockJSONOptionsO", "NSData"]
 - ["16Apple_MusicTests15MockJSONOptionsO", "RawValue"]
 - ["16Apple_MusicTests15MockJSONOptionsO", "String"]
 - ["16Apple_MusicTests15MockJSONOptionsO", "URL"]
@@ -110,8 +107,10 @@ depends-member:
 - ["16Apple_MusicTests15MockJSONOptionsO", "path"]
 - ["16Apple_MusicTests15MockJSONOptionsO", "rawValue"]
 - ["16Apple_MusicTests15MockJSONOptionsO", "url"]
-- !private ["SM", "init"]
-- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So6NSDataC", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bundle"]
 - ["So8NSObjectC", "MockJSONLoader"]
 - ["So8NSObjectC", "init"]
@@ -122,11 +121,11 @@ depends-member:
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "path"]
 - !private ["So8NSObjectP", "test"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["Sk", "init"]
-- !private ["Sm", "init"]
 - ["SY", "=="]
 - !private ["SY", "Bundle"]
-- !private ["SY", "Data"]
+- !private ["SY", "NSData"]
 - ["SY", "RawValue"]
 - !private ["SY", "URL"]
 - ["SY", ""]
@@ -145,6 +144,7 @@ depends-member:
 - !private ["10Foundation3URLV", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "MockJSONLoader"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -161,29 +161,29 @@ depends-nominal:
 - "So8NSBundleC"
 - "s7CVarArgP"
 - !private "Sl"
-- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "10Foundation4DataV"
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "SE"
 - "SQ"
 - "SH"
 - "16Apple_MusicTests15MockJSONOptionsO"
-- !private "SM"
-- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So6NSDataC"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
 - !private "Sk"
-- !private "Sm"
 - "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - !private "10Foundation3URLV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -1390,4 +1390,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "89fd3c6059f2cea5820fcfd77645edfe"
+interface-hash: "f2459dc0afb798de61286fa0960b61ca"

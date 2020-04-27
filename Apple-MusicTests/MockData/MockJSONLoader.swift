@@ -18,7 +18,7 @@ class MockJSONLoader: NetworkService {
     }
     
     func load<T: Decodable>(_ type: T.Type, _ option: MockJSONOptions) -> Result<T, Error> {
-        Result(catching: { try decoder.decode(type, from: option.data) })
+        Result(catching: { try decoder.decode(type, from: option.data as Data) })
     }
     
     func getAlbums(_ url: URL, completion: @escaping NetworkHandler) {

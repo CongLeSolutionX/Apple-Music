@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import StoreKit
 
 class DetailViewController: UIViewController {
     // MARK: - UI element properties
@@ -195,7 +194,7 @@ class DetailViewController: UIViewController {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
-                print("Cant open the iTunes URL")
+                fatalError("Cant open the iTunes link")
             }
         })
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil)

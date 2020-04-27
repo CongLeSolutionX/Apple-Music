@@ -9,7 +9,7 @@
 import Foundation
 
 class AlbumInfoViewModel {
-// MARK: - Computed properties 
+// MARK: - Properties 
     private var albumInfo: Album {
         didSet {
             updateView?()
@@ -17,7 +17,7 @@ class AlbumInfoViewModel {
     }
     private let imageService: ImageService
     var updateView: (() -> Void)?
-    
+// MARK: - Computed properties
     var artworkLink: URL? {
         guard let url = albumInfo.artworkUrl100 else {
             return nil

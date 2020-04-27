@@ -20,7 +20,7 @@ enum MockJSONOptions: String {
 extension MockJSONOptions {
     var path: String {
         guard let path = Bundle.test.path(forResource: self.rawValue, ofType: "json") else {
-            fatalError("Error: mock json")
+            fatalError("Error: mock JSON")
         }
         return path
     }
@@ -29,7 +29,11 @@ extension MockJSONOptions {
         URL(fileURLWithPath: path)
     }
     
-    var data: Data {
-        try! Data(contentsOf: self.url)
+    var data: NSData {
+        guard let data = NSData(contentsOf: self.url) else {
+            fatalError("Error: mock JSON")
+        }
+        return data
     }
+    
 }
