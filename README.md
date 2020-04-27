@@ -70,11 +70,12 @@ This app is built based on the following criteria:
 <br/>
 <br/>
 <br/>
+
 ### Landscape Mode: 
 
-<img align="center" src="Screenshots/Landscape-1.png" width="600" height="300" title="Landscape-1">
-<img align="center" src="Screenshots/Landscape-2.png" width="600" height="300" title="Landscape-2">
-<img align="center" src="Screenshots/Landscape-3.png" width="600" height="300"  title="Landscape-3">
+<img align="center" src="Screenshots/Landscape-1.png" width="600" height="320" title="Landscape-1">
+<img align="center" src="Screenshots/Landscape-2.png" width="600" height="320" title="Landscape-2">
+<img align="center" src="Screenshots/Landscape-3.png" width="600" height="320"  title="Landscape-3">
 
 
 
