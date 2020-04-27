@@ -13,7 +13,7 @@ class AlbumInfoViewModelTests: XCTestCase {
     
     let mockLoader = MockJSONLoader()
     let mockModel = MockExpectations.album
-    lazy var album: Album = {
+    lazy var mockAlbum: Album = {
         let result = mockLoader.load(Album.self, .album)
         guard case Result.success(let album) = result else {
             fatalError()
@@ -23,7 +23,7 @@ class AlbumInfoViewModelTests: XCTestCase {
     
     func testAlbumInfoViewModel() {
         // Given
-        let albumInfoViewModel = AlbumInfoViewModel(album)
+        let albumInfoViewModel = AlbumInfoViewModel(mockAlbum)
         
         // Then
         XCTAssertEqual(albumInfoViewModel.artistName,
@@ -42,7 +42,7 @@ class AlbumInfoViewModelTests: XCTestCase {
     
     func testAlbumInfoViewModelWithBadAlbum() {
         // Given
-        let albumInfoViewModel = AlbumInfoViewModel(album)
+        let albumInfoViewModel = AlbumInfoViewModel(mockAlbum)
         
         // When
         var data: Data?

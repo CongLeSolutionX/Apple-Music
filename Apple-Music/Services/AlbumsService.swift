@@ -20,8 +20,6 @@ protocol NetworkService: class {
 }
 // Download albums from Apple API and save the data into model layer 
 class NetworkConnection: NetworkService {
-    
-    
     func getAlbums(_ url: URL, completion: @escaping NetworkHandler) {
         URLSession.shared.dataTask(with: url) { (dat, response, err) in
             // Error handling
