@@ -31,7 +31,7 @@ This app is built based on the following criteria:
     - Tests for Album: check if the app can load data into one single Album object and load multiple Album types into an array.
     - Tests for AlbumViewModel: check if the AlbumViewModel can perform networking calls to download JSONdata from Apple API, download image with url endpoint,  perform callback in closure, response to bad image endpoint, response to bad albums (that does not have album name, artitst name,etc), and response to failed loading.  
   
-##Extra Features:
+## Extra Features:
 - Handling HTTPS status code when perform networking calls.  
 - Adding custom color shadow effect on UIView. 
 - Adding gradient color for the background on the Detail View Controller 
