@@ -9,7 +9,7 @@
 import UIKit
 
 class AlbumViewModel {
-  
+    // MARK: - Properties
     private let service: NetworkService
     private let imageService = ImageService()
     var updateView: (() -> Void)?
@@ -19,10 +19,15 @@ class AlbumViewModel {
         }
     }
     
+    var numberOfAlbums: Int {
+        return albums.count
+    }
+    
+    // Injecting depedencies from objects (NetworkConnection and ImageServiceProvider) at initilizing
     init(service: NetworkService = NetworkConnection(), imageService: ImageServiceProvider = ImageService()) {
         self.service = service
     }
- 
+    // MARK: - Methods
     func downloadAlbum(_ url: URL) {
         service.getAlbums(url ){ result in
             switch result {
@@ -32,10 +37,6 @@ class AlbumViewModel {
                 print(error.localizedDescription)
             }
         }
-    }
-    
-    var numberOfAlbums: Int {
-        return albums.count
     }
     
     func getAlbumName (_ index: Int) -> String {

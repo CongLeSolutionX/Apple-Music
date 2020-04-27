@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+// djbHash algorithm makes image name unique
 extension URL {
     var djbHash: Int {
         return self.absoluteString.utf8
@@ -37,6 +37,7 @@ class ImagePersister {
     }
     
 }
+// set, save, get, and load persistent data on the disk 
 extension ImagePersister {
     
     // MARK: - Data Accessors
@@ -62,7 +63,6 @@ extension ImagePersister {
     }
     
     // MARK: - Disk Accessors
-    
     private func load(forKey key: String) -> Data? {
         let url = rootUrl.appendingPathComponent(key)
         return try? Data(contentsOf: url)

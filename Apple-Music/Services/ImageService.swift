@@ -11,7 +11,8 @@ import Foundation
 protocol ImageServiceProvider {
     func download(url: URL, _ completion: @escaping (Data?) -> Void )
 }
-
+// Download image from internet using URL 
+// Make each image name unique using djbHashString
 class ImageService: ImageServiceProvider  {
     
     private let session = URLSession(configuration: .default)
@@ -34,6 +35,7 @@ class ImageService: ImageServiceProvider  {
         if currentDownloads.contains(url) {
             return
         }
+        // avoid race condition via using NSLock() to create mutually exclusive lock
         let dataTask = session.dataTask(with: url) { (data, _, _) in
             completion(data)
             self.lock.lock(); defer { self.lock.unlock() }

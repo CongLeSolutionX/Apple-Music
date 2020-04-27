@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// Temporally Fix the Apple internal error when animated the UIAlertController button 
 extension UIAlertController {
     func fixNegativeConstraintError() {
         for subView in self.view.subviews {

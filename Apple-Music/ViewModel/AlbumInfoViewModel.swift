@@ -9,7 +9,7 @@
 import Foundation
 
 class AlbumInfoViewModel {
-    
+// MARK: - Computed properties 
     private var albumInfo: Album {
         didSet {
             updateView?()
@@ -17,11 +17,6 @@ class AlbumInfoViewModel {
     }
     private let imageService: ImageService
     var updateView: (() -> Void)?
-    
-    init(_ albumInfo: Album, imageService: ImageService = ImageService()) {
-        self.albumInfo = albumInfo
-        self.imageService = imageService
-    }
     
     var artworkLink: URL? {
         guard let url = albumInfo.artworkUrl100 else {
@@ -37,16 +32,6 @@ class AlbumInfoViewModel {
     var albumName: String? {
         return albumInfo.name
     }
-    
-    func getArtworkImage(_ completion: @escaping (Data?) -> Void) {
-        guard let imageLink = albumInfo.artworkUrl100,
-            let url = URL(string: imageLink) else {
-                completion(nil)
-                return
-        }
-        imageService.download(url: url, completion)
-    }
-    
     var genre: String? {
         return albumInfo.genres?.compactMap { $0.name }.joined(separator: " ")
     }
@@ -66,4 +51,18 @@ class AlbumInfoViewModel {
         return URL(string: urlString)
     }
     
+    // Injecting dependency from object ImageService at initilizing
+       init(_ albumInfo: Album, imageService: ImageService = ImageService()) {
+           self.albumInfo = albumInfo
+           self.imageService = imageService
+       }
+// MARK: - Method
+    func getArtworkImage(_ completion: @escaping (Data?) -> Void) {
+        guard let imageLink = albumInfo.artworkUrl100,
+            let url = URL(string: imageLink) else {
+                completion(nil)
+                return
+        }
+        imageService.download(url: url, completion)
+    }
 }

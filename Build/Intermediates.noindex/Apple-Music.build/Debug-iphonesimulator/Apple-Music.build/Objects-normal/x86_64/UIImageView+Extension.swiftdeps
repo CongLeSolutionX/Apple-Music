@@ -8,7 +8,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
-- !private "FloatLiteralType"
+- "CGFloat"
 - "UIImageView"
 depends-member:
 - !private ["So7CALayerC", "cornerRadius"]
@@ -43,6 +43,7 @@ depends-member:
 - !private ["So8NSCodingP", "contentMode"]
 - !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "layer"]
+- ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "clipsToBounds"]
 - ["So8NSObjectC", "configureCornerRadius"]
 - !private ["So8NSObjectC", "contentMode"]
@@ -81,6 +82,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "clipsToBounds"]
 - !private ["So20UIFocusItemContainerP", "contentMode"]
 - !private ["So20UIFocusItemContainerP", "layer"]
+- ["So11UIImageViewC", "CGFloat"]
 - !private ["So11UIImageViewC", "clipsToBounds"]
 - ["So11UIImageViewC", "configureCornerRadius"]
 - !private ["So11UIImageViewC", "contentMode"]
@@ -91,6 +93,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "clipsToBounds"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "clipsToBounds"]
 - ["So11UIResponderC", "configureCornerRadius"]
 - !private ["So11UIResponderC", "contentMode"]
@@ -104,6 +107,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "clipsToBounds"]
 - !private ["So23UIUserActivityRestoringP", "contentMode"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
+- ["So6UIViewC", "CGFloat"]
 - !private ["So6UIViewC", "clipsToBounds"]
 - ["So6UIViewC", "configureCornerRadius"]
 - !private ["So6UIViewC", "contentMode"]
@@ -1367,4 +1371,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a2b51c3c26595cbcb80e6ef414414387"
+interface-hash: "4f03e91b8803af538b616c2aedd24122"

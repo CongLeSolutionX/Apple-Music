@@ -9,10 +9,12 @@
 import UIKit
 
 extension UIImageView {
-    func configureCornerRadius(){
+    // make the UIImage conrners round 
+    func configureCornerRadius(cornerRadius: CGFloat){
         contentMode = .scaleAspectFit
         clipsToBounds = true
-        layer.cornerRadius = 10.0 
+        layer.cornerRadius = cornerRadius
     }
+    
 }
 

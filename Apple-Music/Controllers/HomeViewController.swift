@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
+// HomeViewController with the list of all albums
 class HomeViewController: UIViewController  {
-    
+    // MARK: - Properties
     let tableView = UITableView()
     var albumViewModel = AlbumViewModel()
-    
+    // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let url = AppleITuneAPI.getAlbumURL() else { return  }
@@ -21,8 +21,7 @@ class HomeViewController: UIViewController  {
         setUpNavigationBar()
         setUpTableView()
     }
-    
-    
+    // MARK: - Methods
     func setUpNavigationBar() {
         let title = UILabel()
         title.text = "Top 100 Apple Music Albums"
@@ -45,7 +44,7 @@ class HomeViewController: UIViewController  {
         // get the reusable cells
         tableView.register(CustomTableViewCell.self,
                            forCellReuseIdentifier: CellsID.cellReuseIdendifier)
-        
+        // update the UI of the table view with albums data
         albumViewModel.updateView = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
@@ -59,8 +58,8 @@ extension HomeViewController: UITableViewDelegate {
         let detailVC = DetailViewController()
         detailVC.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
         navigationController?.pushViewController(detailVC, animated: true)
-       if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
-            cell.contentView.backgroundColor = UIColor.gray
+        if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
+            cell.contentView.backgroundColor = UIColor.CustomColors.Blue.DodgerBlue
         }
     }
     
@@ -83,7 +82,7 @@ extension HomeViewController: UITableViewDataSource {
                 fatalError("Cannot dequeue cell")
         }
         // set color for cell background
-        cell.contentView.backgroundColor = cell.isSelected ? UIColor.gray : UIColor.white
+        cell.contentView.backgroundColor = cell.isSelected ? UIColor.CustomColors.Blue.DodgerBlue : UIColor.white
         // get data for each cell
         cell.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
         

@@ -26,6 +26,7 @@ extension UIFont.TextStyle {
     }
 }
 
+// Configure UILabel init with pre-defined custom attributes 
 extension UILabel {
     
     func baseTextConfigure() {

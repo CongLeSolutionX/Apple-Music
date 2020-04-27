@@ -9,15 +9,15 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-    
+    // MARK: - Properties
     lazy var albumImage: UIImageView = {
         let albumImage = UIImageView()
-        albumImage.configureCornerRadius()
+        albumImage.configureCornerRadius(cornerRadius: 10.0)
         return albumImage
     }()
     
     lazy var labelContainer: UIView = {
-       return UIView()
+        return UIView()
     }()
     
     lazy var albumNameLabel: UILabel = {
@@ -34,18 +34,16 @@ class CustomTableViewCell: UITableViewCell {
             bindData()
         }
     }
-    
+    // MARK: - Initializer
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addUIElements()
-        contentView.backgroundColor = .red
-        selectionStyle = .blue
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+    // MARK: - Methods
     func addUIElements() {
         contentView.addSubview(albumImage)
         labelContainer.addSubview(albumNameLabel)

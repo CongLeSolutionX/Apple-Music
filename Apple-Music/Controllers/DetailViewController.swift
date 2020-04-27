@@ -10,13 +10,18 @@ import UIKit
 import StoreKit
 
 class DetailViewController: UIViewController {
-    // MARK: - UI elements
+    // MARK: - UI element properties
     lazy var albumImage: UIImageView = {
         let albumImage = UIImageView()
-        albumImage.configureCornerRadius()
-        // albumImage.addingRedShadow()
-        
+        albumImage.configureCornerRadius(cornerRadius: 20.0)
         return albumImage
+    }()
+    
+    lazy var containerView : UIView = {
+        let container = UIView()
+        container.addCrimsonShadow(cornerRadius: 25.0)
+        container.addSubview(albumImage)
+        return container
     }()
     
     lazy var albumNameLabel: UILabel = {
@@ -49,7 +54,7 @@ class DetailViewController: UIViewController {
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
         button.titleLabel?.stylizeToCenter(alignment: .center)
         button.backgroundColor = .blue
-        button.layer.cornerRadius = 5
+        button.layer.cornerRadius = 10
         return button
     }()
     
@@ -79,18 +84,22 @@ class DetailViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        addUIElements()
-        view.backgroundColor = .green
+        configureDetailView()
+        // use gradient color for the background view
+        let gradientView = GradientView(frame: self.view.bounds)
+        self.view.insertSubview(gradientView, at: 0)
+        
         title = "Album Details"
     }
     // MARK: - Methods
-    func addUIElements() {
+    func configureDetailView() {
         view.addSubview(linkoutButton)
         setLinkoutButtonConstraints()
         view.addSubview(scrollView)
         setScrollViewConstraints()
-        setupStackViewVertically()
+        setupStackView()
     }
+    
     
     func setScrollViewConstraints() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -103,7 +112,7 @@ class DetailViewController: UIViewController {
                                              constant: -20).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: linkoutButton.topAnchor).isActive = true
     }
-    func setupStackViewVertically() {
+    func setupStackView() {
         scrollView.addSubview(stackViewVertically)
         stackViewVertically.translatesAutoresizingMaskIntoConstraints = false
         
@@ -115,8 +124,11 @@ class DetailViewController: UIViewController {
         
         stackViewVertically.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         
+        addUIElementsToStackView()
+    }
+    func addUIElementsToStackView() {
         // adding UI elements into stackview
-        stackViewVertically.addArrangedSubview(albumImage)
+        stackViewVertically.addArrangedSubview(containerView)
         setImageConstraints()
         stackViewVertically.addArrangedSubview(albumNameLabel)
         setAlbumNameLabelConstraints()
@@ -125,14 +137,14 @@ class DetailViewController: UIViewController {
         stackViewVertically.addArrangedSubview(releaseDateLabel)
         stackViewVertically.addArrangedSubview(copyrightInfoLabel)
     }
+    
     func setImageConstraints() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
         albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor).isActive = true
         albumImage.topAnchor.constraint(equalTo: stackViewVertically.topAnchor).isActive = true
-        albumImage.leadingAnchor.constraint(equalTo: stackViewVertically.leadingAnchor).isActive = true
-        albumImage.trailingAnchor.constraint(equalTo: stackViewVertically.trailingAnchor).isActive = true
+        albumImage.leadingAnchor.constraint(equalTo: stackViewVertically.leadingAnchor, constant: 10).isActive = true
+        albumImage.trailingAnchor.constraint(equalTo: stackViewVertically.trailingAnchor, constant: -25).isActive = true
     }
-    
     
     func setAlbumNameLabelConstraints() {
         albumNameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -141,7 +153,6 @@ class DetailViewController: UIViewController {
     }
     
     func setLinkoutButtonConstraints() {
-        //        stackViewHorizontally.addSubview(linkoutButton)
         linkoutButton.translatesAutoresizingMaskIntoConstraints = false
         linkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         linkoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true

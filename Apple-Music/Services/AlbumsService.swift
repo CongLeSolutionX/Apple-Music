@@ -18,7 +18,7 @@ struct ErrorInfo: Error {
 protocol NetworkService: class {
     func getAlbums(_ url: URL, completion: @escaping NetworkHandler)
 }
-
+// Download albums from Apple API and save the data into model layer 
 class NetworkConnection: NetworkService {
     func getAlbums(_ url: URL, completion: @escaping NetworkHandler) {
         URLSession.shared.dataTask(with: url) { (dat,_, err) in

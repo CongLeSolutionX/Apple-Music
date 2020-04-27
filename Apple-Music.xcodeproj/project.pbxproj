@@ -36,6 +36,8 @@
 		4CD206C9244AC1F300560B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206C8244AC1F300560B93 /* Assets.xcassets */; };
 		4CD206CC244AC1F300560B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206CA244AC1F300560B93 /* LaunchScreen.storyboard */; };
 		4CD206D4244B00D300560B93 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */; };
+		4CF7BA7D2455EE770040FA6A /* GradientColorBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7BA7C2455EE770040FA6A /* GradientColorBackgroundView.swift */; };
+		4CF7BA7F24564CEA0040FA6A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7BA7E24564CEA0040FA6A /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		4CD206CB244AC1F300560B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CD206CD244AC1F300560B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		4CF7BA7C2455EE770040FA6A /* GradientColorBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColorBackgroundView.swift; sourceTree = "<group>"; };
+		4CF7BA7E24564CEA0040FA6A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 			children = (
 				4C262C092450CFA600B2D21C /* CellsID.swift */,
 				4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */,
+				4CF7BA7C2455EE770040FA6A /* GradientColorBackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				4CBD74052451F33E0032E5B0 /* UILabel+Extensions.swift */,
 				4C4C69F72452C92900DD3CA8 /* UIImageView+Extension.swift */,
 				4C83508F24550E1F0066245C /* UIAlertController+Extension.swift */,
+				4CF7BA7E24564CEA0040FA6A /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF7BA7D2455EE770040FA6A /* GradientColorBackgroundView.swift in Sources */,
 				4C97F2B7244D01DA006D760F /* AppleITuneAPI.swift in Sources */,
 				4CBD74062451F33E0032E5B0 /* UILabel+Extensions.swift in Sources */,
 				4C262C0A2450CFA600B2D21C /* CellsID.swift in Sources */,
@@ -378,6 +385,7 @@
 				4C83509024550E1F0066245C /* UIAlertController+Extension.swift in Sources */,
 				4C4C69F82452C92900DD3CA8 /* UIImageView+Extension.swift in Sources */,
 				4C97F2B5244D00B9006D760F /* AlbumsService.swift in Sources */,
+				4CF7BA7F24564CEA0040FA6A /* UIColor+Extension.swift in Sources */,
 				4C97F2BC244D13A6006D760F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
