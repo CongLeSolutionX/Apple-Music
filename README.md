@@ -51,8 +51,8 @@ This app is built based on the following criteria:
 ### Portrait mode: 
 
 <img align="left" src="Screenshots/Portrait-1.png" width="180" height="400" title="Portrait-1">
-<img align="center" src="Screenshots/Portrait-2.png" width="180" height="400" title="Portrait-2">
-<img align="right" src="Screenshots/Portrait-3.png" width="180" height="400"  title="Portrait-3">
+<img align="left" src="Screenshots/Portrait-2.png" width="180" height="400" title="Portrait-2">
+<img align="left" src="Screenshots/Portrait-3.png" width="180" height="400"  title="Portrait-3">
 
 ### Landscape mode: 
 
