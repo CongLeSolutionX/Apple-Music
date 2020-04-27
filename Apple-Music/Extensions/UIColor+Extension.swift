@@ -4,8 +4,6 @@
 //
 //  Created by Cong Le on 4/26/20.
 //  Copyright © 2020 CongLeSolutionX. All rights reserved.
-// Source:  https://medium.com/ios-os-x-development/ios-extend-uicolor-with-custom-colors-93366ae148e6
-
 
 import UIKit
 

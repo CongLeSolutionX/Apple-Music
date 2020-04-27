@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "7ebe123923d029249c82b5834d5d1020"
-build_time: [1587946424, 901579000]
+build_time: [1587947957, 797012000]
 inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/GradientColorBackgroundView.swift": [1587943997, 554111119]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1587860009, 144818746]
@@ -18,5 +18,5 @@ inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIAlertController+Extension.swift": [1587940832, 335344727]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIImageView+Extension.swift": [1587941855, 431910283]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AlbumsService.swift": [1587941607, 796572011]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIColor+Extension.swift": [1587944386, 146408766]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIColor+Extension.swift": [1587947903, 468681239]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/DetailViewController.swift": [1587946424, 835298424]
