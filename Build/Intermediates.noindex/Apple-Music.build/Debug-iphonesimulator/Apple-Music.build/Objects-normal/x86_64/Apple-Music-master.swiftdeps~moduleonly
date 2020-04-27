@@ -1,9 +1,9 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
-options: "7ebe123923d029249c82b5834d5d1020"
-build_time: [1587947957, 797012000]
+options: "5e1a26b6ca8e3aa6d900f6fd074834ae"
+build_time: [1587955070, 235148000]
 inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/GradientColorBackgroundView.swift": [1587943997, 554111119]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1587860009, 144818746]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1587954956, 40526048]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UILabel+Extensions.swift": [1587941764, 350365766]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/CellsID.swift": [1587860009, 145867047]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/ImagePersister.swift": [1587941047, 936806623]
@@ -17,6 +17,6 @@ inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/ViewModel/AlbumInfoViewModel.swift": [1587942237, 302611387]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIAlertController+Extension.swift": [1587940832, 335344727]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIImageView+Extension.swift": [1587941855, 431910283]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AlbumsService.swift": [1587941607, 796572011]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AlbumsService.swift": [1587955038, 257044887]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Extensions/UIColor+Extension.swift": [1587947903, 468681239]
-  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/DetailViewController.swift": [1587946424, 835298424]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Controllers/DetailViewController.swift": [1587948420, 181015830]

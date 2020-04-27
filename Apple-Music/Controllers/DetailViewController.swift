@@ -54,7 +54,7 @@ class DetailViewController: UIViewController {
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
         button.titleLabel?.stylizeToCenter(alignment: .center)
         button.backgroundColor = .blue
-        button.layer.cornerRadius = 10
+        button.layer.cornerRadius = 15
         return button
     }()
     

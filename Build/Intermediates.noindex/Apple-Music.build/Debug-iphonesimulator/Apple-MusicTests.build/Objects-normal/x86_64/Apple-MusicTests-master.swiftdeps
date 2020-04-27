@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "871f26f1f25acb0fe0045e92c7ec8c76"
+build_time: [1587955075, 370739000]
+inputs:
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/Model Tests/AlbumTests.swift": [1587860009, 152812257]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/MockModelExpectations/MockAlbumExpectations.swift": [1587860009, 152142812]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/MockData/MockJSONLoader.swift": [1587860009, 150736009]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/MockData/MockBadAlbumLoader.swift": [1587860009, 149217275]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/View Model Tets/AlbumViewModelTests.swift": [1587860009, 157165335]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/View Model Tets/AlbumInfoViewModelTests.swift": [1587860009, 154475685]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/MockData/MockJSONOptions.swift": [1587860009, 151257104]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/MockData/MockDataLoader.swift": [1587860009, 150367328]
+  "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-MusicTests/MockData/MockNilLoader.swift": [1587860009, 151562287]
