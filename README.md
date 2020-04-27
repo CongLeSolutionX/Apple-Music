@@ -15,11 +15,11 @@ This app is built based on the following criteria:
 - Download 100 music albums across all genres using Apple's RSS generator at [https://rss.itunes.apple.com/en-us](https://rss.itunes.apple.com/en-us).
   
 - Contains 2 screens with the folowing specifications: 
-	1. First screen:
+	1. **First screen:**
 		- Uses UITableView showing one album per cell.
 		- Each cell should display the name of the album, the artist, and the album art (thumbnail image). 
     	- Tapping on a cell should push another detail view onto the navigation stack.
-	2. Second screen: 
+	2. **Second screen:**
     	- Chould not use UITabelView. 
     	- Contains a larger image at the top of the screen 
     	- Beneath the artwork image, displays the album name, the artist name, genre, release date, and copyright. 
@@ -31,7 +31,7 @@ This app is built based on the following criteria:
     - Tests for Album: check if the app can load data into one single Album object and load multiple Album types into an array.
     - Tests for AlbumViewModel: check if the AlbumViewModel can perform networking calls to download JSONdata from Apple API, download image with url endpoint,  perform callback in closure, response to bad image endpoint, response to bad albums (that does not have album name, artitst name,etc), and response to failed loading.  
   
-##Extra features:
+##Extra Features:
 - Handling HTTPS status code when perform networking calls.  
 - Adding custom color shadow effect on UIView. 
 - Adding gradient color for the background on the Detail View Controller 
@@ -46,21 +46,35 @@ This app is built based on the following criteria:
     - Caching the frequent used image via saving the image name into cachesDirectory in file system persistently on disk. 
     - Encrypting each cached image name with unique key by using djbHashString algorithm.
 
-## Screenshots
-
-### Portrait mode: 
+## Screenshots 
+### Portrait Mode: 
 
 <img align="left" src="Screenshots/Portrait-1.png" width="180" height="400" title="Portrait-1">
 <img align="left" src="Screenshots/Portrait-2.png" width="180" height="400" title="Portrait-2">
-<img align="left" src="Screenshots/Portrait-3.png" width="180" height="400"  title="Portrait-3">
+<img align="left" src="Screenshots/Portrait-3.png" width="180" height="400"  title="Portrait-3"> <br />
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+### Landscape Mode: 
 
-
-
-### Landscape mode: 
-
-<img src="Screenshots/Landscape-1.png" width="600" height="300" title="Landscape-1">
-<img src="Screenshots/Landscape-2.png" width="600" height="300" title="Landscape-2">
-<img src="Screenshots/Landscape-3.png" width="600" height="300"  title="Landscape-3">
+<img align="center" src="Screenshots/Landscape-1.png" width="600" height="300" title="Landscape-1">
+<img align="center" src="Screenshots/Landscape-2.png" width="600" height="300" title="Landscape-2">
+<img align="center" src="Screenshots/Landscape-3.png" width="600" height="300"  title="Landscape-3">
 
 
 
