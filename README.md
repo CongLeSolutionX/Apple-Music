@@ -15,11 +15,11 @@ This app is built based on the following criteria:
 - Download 100 music albums across all genres using Apple's RSS generator at [https://rss.itunes.apple.com/en-us](https://rss.itunes.apple.com/en-us).
   
 - Contains 2 screens with the folowing specifications: 
-  1. First screen:
+	1. First screen:
 		- Uses UITableView showing one album per cell.
 		- Each cell should display the name of the album, the artist, and the album art (thumbnail image). 
     	- Tapping on a cell should push another detail view onto the navigation stack.
-  2. Second screen: 
+	2. Second screen: 
     	- Chould not use UITabelView. 
     	- Contains a larger image at the top of the screen 
     	- Beneath the artwork image, displays the album name, the artist name, genre, release date, and copyright. 
@@ -50,9 +50,9 @@ This app is built based on the following criteria:
 
 ### Portrait mode: 
 
-<img src="Screenshots/Portrait-1.png" width="180" height="400" title="Portrait-1">
-<img src="Screenshots/Portrait-2.png" width="180" height="400" title="Portrait-2">
-<img src="Screenshots/Portrait-3.png" width="180" height="400"  title="Portrait-3">
+<img align="left" src="Screenshots/Portrait-1.png" width="180" height="400" title="Portrait-1">
+<img align="center" src="Screenshots/Portrait-2.png" width="180" height="400" title="Portrait-2">
+<img align="right" src="Screenshots/Portrait-3.png" width="180" height="400"  title="Portrait-3">
 
 ### Landscape mode: 
 
