@@ -20,7 +20,7 @@ This app is built based on the following criteria:
 		- Each cell should display the name of the album, the artist, and the album art (thumbnail image). 
     	- Tapping on a cell should push another detail view onto the navigation stack.
 	2. **Second screen:**
-    	- Chould not use UITabelView. 
+    	- Should not use UITabelView. 
     	- Contains a larger image at the top of the screen 
     	- Beneath the artwork image, displays the album name, the artist name, genre, release date, and copyright. 
     	- Contains a button that when tapped fast app switches to the album page in the iTunes store.
