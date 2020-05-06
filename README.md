@@ -1,5 +1,5 @@
 # Apple-Music
-This project aims to fullfill all Nike coding assigment.
+This project aims to fullfill Nike coding assigment.
 
 This app is built based on the following criteria:  
 
