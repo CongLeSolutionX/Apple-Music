@@ -243,8 +243,8 @@
 				4C97F2B8244D134B006D760F /* Controllers */,
 				4C97F2B3244D0074006D760F /* Services */,
 				4CB95775244EBA6100A00229 /* Extensions */,
-				4CD206BF244AC1F100560B93 /* AppDelegate.swift */,
 				4CD206C8244AC1F300560B93 /* Assets.xcassets */,
+				4CD206BF244AC1F100560B93 /* AppDelegate.swift */,
 				4CD206CA244AC1F300560B93 /* LaunchScreen.storyboard */,
 				4CD206CD244AC1F300560B93 /* Info.plist */,
 			);

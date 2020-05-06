@@ -21,6 +21,10 @@ class HomeViewController: UIViewController  {
         setUpNavigationBar()
         setUpTableView()
     }
+    
+    override func didReceiveMemoryWarning() {
+        print("HomeViewController is overloaded boy")
+    }
     // MARK: - Methods
     func setUpNavigationBar() {
         let title = UILabel()

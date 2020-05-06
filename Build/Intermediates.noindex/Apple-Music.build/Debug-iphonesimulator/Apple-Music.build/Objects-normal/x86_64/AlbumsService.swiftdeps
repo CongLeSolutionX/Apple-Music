@@ -19,6 +19,7 @@ depends-top-level:
 - "AnyObject"
 - "AppleMusicAlbums"
 - !private "CastingPrecedence"
+- !private "DispatchQueue"
 - "Error"
 - "ErrorInfo"
 - "FloatLiteralType"
@@ -38,31 +39,44 @@ depends-top-level:
 depends-member:
 - !private ["11Apple_Music0aB6AlbumsV", "deinit"]
 - !private ["SK", "contains"]
+- !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "dataTask"]
+- !private ["s7CVarArgP", "global"]
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "statusCode"]
 - !private ["s7CVarArgP", "value"]
 - !private ["SN", "contains"]
 - !private ["Sl", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "statusCode"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s17CustomReflectableP", "contains"]
+- !private ["s23CustomStringConvertibleP", "async"]
 - !private ["s23CustomStringConvertibleP", "contains"]
 - !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "global"]
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "statusCode"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["Se", "contains"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "global"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "global"]
 - !private ["SE", "contains"]
+- !private ["SQ", "async"]
+- !private ["SQ", "background"]
 - !private ["SQ", "contains"]
 - !private ["SQ", "dataTask"]
 - !private ["SQ", "failure"]
+- !private ["SQ", "global"]
 - !private ["SQ", "resume"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "statusCode"]
@@ -85,9 +99,12 @@ depends-member:
 - ["11Apple_Music9ErrorInfoV", "init"]
 - !private ["So17NSHTTPURLResponseC", "statusCode"]
 - !private ["So17NSHTTPURLResponseC", "value"]
+- !private ["SH", "async"]
+- !private ["SH", "background"]
 - !private ["SH", "contains"]
 - !private ["SH", "dataTask"]
 - !private ["SH", "failure"]
+- !private ["SH", "global"]
 - !private ["SH", "resume"]
 - !private ["SH", "shared"]
 - !private ["SH", "statusCode"]
@@ -100,12 +117,16 @@ depends-member:
 - !private ["So9NSCopyingP", "resume"]
 - !private ["So9NSCopyingP", "statusCode"]
 - !private ["So9NSCopyingP", "value"]
+- !private ["So8NSObjectC", "async"]
 - !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "global"]
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "statusCode"]
 - !private ["So8NSObjectC", "value"]
+- !private ["So8NSObjectP", "async"]
 - !private ["So8NSObjectP", "dataTask"]
+- !private ["So8NSObjectP", "global"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "statusCode"]
@@ -113,6 +134,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "statusCode"]
 - !private ["So14NSSecureCodingP", "value"]
 - !private ["11Apple_Music17NetworkConnectionC", "AppleMusicAlbums"]
+- !private ["11Apple_Music17NetworkConnectionC", "DispatchQueue"]
 - !private ["11Apple_Music17NetworkConnectionC", "HTTPURLResponse"]
 - !private ["11Apple_Music17NetworkConnectionC", "JSONDecoder"]
 - ["11Apple_Music17NetworkConnectionC", "NetworkHandler"]
@@ -123,6 +145,7 @@ depends-member:
 - ["11Apple_Music17NetworkConnectionC", "init"]
 - !private ["11Apple_Music17NetworkConnectionC", "print"]
 - !private ["11Apple_Music14NetworkServiceP", "AppleMusicAlbums"]
+- !private ["11Apple_Music14NetworkServiceP", "DispatchQueue"]
 - !private ["11Apple_Music14NetworkServiceP", "JSONDecoder"]
 - ["11Apple_Music14NetworkServiceP", "NetworkHandler"]
 - ["11Apple_Music14NetworkServiceP", "URL"]
@@ -130,11 +153,16 @@ depends-member:
 - ["11Apple_Music14NetworkServiceP", ""]
 - ["11Apple_Music14NetworkServiceP", "getAlbums"]
 - !private ["11Apple_Music14NetworkServiceP", "print"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "global"]
 - !private ["So19NSProgressReportingP", "resume"]
+- !private ["8Dispatch0A3QoSV0B6SClassO", "background"]
 - !private ["Sk", "contains"]
 - !private ["SX", "contains"]
 - !private ["s6ResultO", "failure"]
 - !private ["s6ResultO", "success"]
+- !private ["7Combine9SchedulerP", "async"]
+- !private ["7Combine9SchedulerP", "global"]
 - !private ["ST", "contains"]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
@@ -144,12 +172,16 @@ depends-member:
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
 - !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataTask"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "global"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "statusCode"]
@@ -164,6 +196,8 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
 - !private "SE"
 - !private "SQ"
 - "s5ErrorP"
@@ -178,10 +212,13 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - "11Apple_Music17NetworkConnectionC"
 - "11Apple_Music14NetworkServiceP"
+- !private "So9OS_objectC"
 - !private "So19NSProgressReportingP"
+- !private "8Dispatch0A3QoSV0B6SClassO"
 - !private "Sk"
 - !private "SX"
 - !private "s6ResultO"
+- !private "7Combine9SchedulerP"
 - !private "ST"
 - !private "7Combine15TopLevelDecoderP"
 - !private "So13NSURLResponseC"

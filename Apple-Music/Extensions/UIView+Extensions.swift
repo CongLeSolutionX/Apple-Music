@@ -11,12 +11,17 @@ import UIKit
 extension UIView {
     // pre-define constraint to the superview
     func pin(to superView: UIView) {
-        translatesAutoresizingMaskIntoConstraints                               = false
-        topAnchor.constraint(equalTo: superView.topAnchor).isActive             = true
-        leadingAnchor.constraint(equalTo: superView.leadingAnchor).isActive     = true
-        bottomAnchor.constraint(equalTo: superView.bottomAnchor).isActive       = true
-        trailingAnchor.constraint(equalTo: superView.trailingAnchor).isActive   = true
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraints = [
+        topAnchor.constraint(equalTo: superView.topAnchor),
+        leadingAnchor.constraint(equalTo: superView.leadingAnchor),
+        bottomAnchor.constraint(equalTo: superView.bottomAnchor),
+        trailingAnchor.constraint(equalTo: superView.trailingAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
+    
     // Add a crimson shadow to a view
     func addCrimsonShadow(cornerRadius: CGFloat) {
         layer.shadowColor = UIColor.CustomColors.Red.Crimson.cgColor

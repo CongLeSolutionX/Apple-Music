@@ -66,3 +66,4 @@ class AlbumInfoViewModel {
         imageService.download(url: url, completion)
     }
 }
+

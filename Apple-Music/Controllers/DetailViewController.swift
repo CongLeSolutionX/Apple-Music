@@ -98,30 +98,56 @@ class DetailViewController: UIViewController {
         setScrollViewConstraints()
         setupStackView()
     }
-    
-    
+    func bindData() {
+        guard let albumInfoViewModel = albumInfoViewModel else {
+            albumNameLabel.text = nil
+            artistNameLabel.text = nil
+            albumImage.image = nil
+            genreLabel.text = nil
+            releaseDateLabel.text = nil
+            copyrightInfoLabel.text = nil
+            return
+        }
+        albumNameLabel.text = albumInfoViewModel.albumName
+        artistNameLabel.text = albumInfoViewModel.artistName
+        albumInfoViewModel.getArtworkImage { data in
+            // bring image to the front end 
+            DispatchQueue.main.async {
+                guard let data = data else {
+                    self.albumImage.image = nil
+                    return
+                }
+                self.albumImage.image = UIImage(data: data)
+            }
+        }
+        genreLabel.text = albumInfoViewModel.genre
+        releaseDateLabel.text = albumInfoViewModel.releaseDate
+        copyrightInfoLabel.text = albumInfoViewModel.copyrightInfo
+    }
+    // MARK: - Constraints for UI elements
     func setScrollViewConstraints() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                                        constant: 20).isActive = true
-        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                            constant: 20).isActive = true
-        
-        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                             constant: -20).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: linkoutButton.topAnchor).isActive = true
+        let constraints = [
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            scrollView.bottomAnchor.constraint(equalTo: linkoutButton.topAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
     func setupStackView() {
         scrollView.addSubview(stackViewVertically)
         stackViewVertically.translatesAutoresizingMaskIntoConstraints = false
         
         // constrain stack view to scroll view
-        stackViewVertically.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        stackViewVertically.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        stackViewVertically.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-        stackViewVertically.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        
-        stackViewVertically.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        let constaints = [
+            stackViewVertically.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            stackViewVertically.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            stackViewVertically.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            stackViewVertically.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            stackViewVertically.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+        ]
+        NSLayoutConstraint.activate(constaints)
         
         addUIElementsToStackView()
     }
@@ -139,10 +165,13 @@ class DetailViewController: UIViewController {
     
     func setImageConstraints() {
         albumImage.translatesAutoresizingMaskIntoConstraints = false
-        albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor).isActive = true
-        albumImage.topAnchor.constraint(equalTo: stackViewVertically.topAnchor).isActive = true
-        albumImage.leadingAnchor.constraint(equalTo: stackViewVertically.leadingAnchor, constant: 10).isActive = true
-        albumImage.trailingAnchor.constraint(equalTo: stackViewVertically.trailingAnchor, constant: -25).isActive = true
+        let constraints = [
+            albumImage.widthAnchor.constraint(equalTo: albumImage.heightAnchor),
+            albumImage.topAnchor.constraint(equalTo: stackViewVertically.topAnchor),
+            albumImage.leadingAnchor.constraint(equalTo: stackViewVertically.leadingAnchor, constant: 10),
+            albumImage.trailingAnchor.constraint(equalTo: stackViewVertically.trailingAnchor, constant: -25)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
     
     func setAlbumNameLabelConstraints() {
@@ -153,38 +182,16 @@ class DetailViewController: UIViewController {
     
     func setLinkoutButtonConstraints() {
         linkoutButton.translatesAutoresizingMaskIntoConstraints = false
-        linkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        linkoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        linkoutButton.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -20).isActive = true
+        let constraints = [
+            linkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            linkoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            linkoutButton.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -20)
+        ]
+        NSLayoutConstraint.activate(constraints)
+        
         
     }
-    
-    func bindData() {
-        guard let albumInfoViewModel = albumInfoViewModel else {
-            albumNameLabel.text = nil
-            artistNameLabel.text = nil
-            albumImage.image = nil
-            genreLabel.text = nil
-            releaseDateLabel.text = nil
-            copyrightInfoLabel.text = nil
-            return
-        }
-        albumNameLabel.text = albumInfoViewModel.albumName
-        artistNameLabel.text = albumInfoViewModel.artistName
-        albumInfoViewModel.getArtworkImage { data in
-            DispatchQueue.main.async {
-                guard let data = data else {
-                    self.albumImage.image = nil
-                    return
-                }
-                self.albumImage.image = UIImage(data: data)
-            }
-        }
-        genreLabel.text = albumInfoViewModel.genre
-        releaseDateLabel.text = albumInfoViewModel.releaseDate
-        copyrightInfoLabel.text = albumInfoViewModel.copyrightInfo
-    }
-    
+    // MARK: Button to link out Safari
     @objc func linkoutButtonAction() {
         guard let url = albumInfoViewModel?.linkoutUrl else {
             return

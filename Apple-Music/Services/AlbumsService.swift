@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 typealias NetworkHandler = (_ result: Result<AppleMusicAlbums, ErrorInfo>) -> Void
 
 // Error type 
@@ -21,25 +22,34 @@ protocol NetworkService: class {
 // Download albums from Apple API and save the data into model layer 
 class NetworkConnection: NetworkService {
     func getAlbums(_ url: URL, completion: @escaping NetworkHandler) {
+        
         URLSession.shared.dataTask(with: url) { (dat, response, err) in
             // Error handling
             if let error = err {
                 completion(.failure(.init(errorDescription: error.localizedDescription)))
                 return
             }
+            
+            
             // unwrap the HTTPS response code
             if let httpResponse = response as? HTTPURLResponse {
                 // if we receive a valid response code,
+                
                 if  (200...299).contains(httpResponse.statusCode) {
+                    
                     print(httpResponse.value(forHTTPHeaderField: "Status") ?? "No Valid Status")
                     // then, get the data from the server
-                    if let data = dat {
-                        do {
-                            let results = try JSONDecoder().decode(AppleMusicAlbums.self, from: data)
-                            completion(.success(results))
-                        } catch {
-                            completion(.failure(.init(errorDescription: error.localizedDescription)))
-                            return
+                    
+                    // create a background queue to handle all the downloading
+                    DispatchQueue.global(qos: .background).async {
+                        if let data = dat {
+                            do {
+                                let results = try JSONDecoder().decode(AppleMusicAlbums.self, from: data)
+                                completion(.success(results))
+                            } catch {
+                                completion(.failure(.init(errorDescription: error.localizedDescription)))
+                                return
+                            }
                         }
                     }
                 }
