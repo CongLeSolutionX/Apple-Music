@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
-options: "5e1a26b6ca8e3aa6d900f6fd074834ae"
-build_time: [1588806199, 4953000]
+options: "7ebe123923d029249c82b5834d5d1020"
+build_time: [1588960210, 689184000]
 inputs:
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/View/GradientColorBackgroundView.swift": [1587943997, 554111119]
   "/Users/congle/Desktop/DEVELOPMENTS/ENHANCE NOTES/NIKE/Apple-Music/Apple-Music/Services/AppleITuneAPI.swift": [1588000045, 804442215]

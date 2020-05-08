@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run tests
+      run: xcodebuild -project 'Apple-Music.xcodeproj' -scheme 'Apple-Music' -destination 'platform=iOS Simulator,name=iPhone X' test | xcpretty
+    - name: Build app
+      run: xcodebuild -project 'Apple-Music.xcodeproj' -scheme 'Apple-Music' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO | xcpretty
