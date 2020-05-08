@@ -10,7 +10,7 @@ This app is built based on the following criteria:
 
 - Use Auto Layout to support both Landscape and Portrait mode.
 
-- Is natively built on Swift 5.1 and iOS Developemnt Target 13.0 and not used any third-party libraries. 
+- Is natively built on Swift 5.1, iOS Developemnt Target 13.0, XCode 11.4, and not used any third-party libraries. 
 
 - Download 100 music albums across all genres using Apple's RSS generator at [https://rss.itunes.apple.com/en-us](https://rss.itunes.apple.com/en-us).
   
