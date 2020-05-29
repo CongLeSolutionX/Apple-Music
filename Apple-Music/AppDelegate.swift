@@ -21,11 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         window?.backgroundColor = .white
-        
-      
         return true
     }
-    
-    
 }
 

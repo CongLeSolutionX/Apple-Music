@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		xOnIYkZQfIPfscjf0LdzS+sJpIQ=
+		zNoEfsYTHO+6gTWuqftEf+/VHsY=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,84 +14,15 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		On7fRCcHWsBZuqXNxLE9xZwKHTE=
-		</data>
-		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
-		<data>
-		h3MnTj8yhzoP0Lg4EVNxXaTp/YY=
-		</data>
-		<key>Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport</key>
-		<data>
-		1X5YD8JgNhrCOGciM5yd+BAkaFo=
-		</data>
-		<key>Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources</key>
-		<data>
-		8U6xgMN0XhiJd84hTiDBrCIyCA8=
-		</data>
-		<key>Frameworks/XCTAutomationSupport.framework/version.plist</key>
-		<data>
-		xIW7Y7yzOD6JGyOs6koc9aCjMmU=
-		</data>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
-		<data>
-		vDar5GYm8oCbXa6hpw5388UIp/M=
-		</data>
-		<key>Frameworks/XCTest.framework/XCTest</key>
-		<data>
-		BxGDDspDE7UZ4y5B0KMkepi79P0=
-		</data>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
-		<data>
-		kMeaDkpb9bsb+OIm7hyNsv3J0bQ=
-		</data>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TuBj57ZP6zBqcL9HttO2Rucaw9E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
-		<data>
-		xIW7Y7yzOD6JGyOs6koc9aCjMmU=
-		</data>
-		<key>Frameworks/libXCTestBundleInject.dylib</key>
-		<data>
-		ZSmfVBZZGDNWNdn/b5XApmISgmA=
-		</data>
-		<key>Frameworks/libXCTestSwiftSupport.dylib</key>
-		<data>
-		qzsvM7v+EPBtC/vKd64pfwIkpKE=
+		wPNoomyYynsQOUdPO2n5acDn9NM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ih49RX2e0wFAig9asfGAoku19P8=
+		KDSkc9IMY4siBDyJRuYie2ZOqgA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
-		</data>
-		<key>PlugIns/Apple-MusicTests.xctest/Apple-MusicTests</key>
-		<data>
-		s5LhrNpzsFNV88F6EO504iralnE=
-		</data>
-		<key>PlugIns/Apple-MusicTests.xctest/Info.plist</key>
-		<data>
-		q9wbiHYPDPOaPHILagWYYkg79x8=
-		</data>
-		<key>PlugIns/Apple-MusicTests.xctest/MockAlbumResponse.json</key>
-		<data>
-		Y6GOOiq7kSijRpEbEhnryqSM9v4=
-		</data>
-		<key>PlugIns/Apple-MusicTests.xctest/MockAlbumsResponse.json</key>
-		<data>
-		zIsjWgR5qk8dtn3YF5/fuTnfYB8=
-		</data>
-		<key>PlugIns/Apple-MusicTests.xctest/_CodeSignature/CodeResources</key>
-		<data>
-		yodMS3VZ1qH2OH86auwfr43pUJE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -100,7 +31,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s8CGpq5nNNVGdNn7gfKVHfAI9l1DVmyEw+DtOLXH5vY=
+			WehctTLSVzU7b2LsOq837Wf0ZcOeqQv47sV38PIBWIE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -114,121 +45,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LmdgWcR9usVQfeLvKie7AAFje9MS5AvgJsfTYt+hyJw=
-			</data>
-		</dict>
-		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HlItwrQNlIOMRfT2H8C2fGiX54nXuJtTDikDQ0MdllU=
-			</data>
-		</dict>
-		<key>Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TtyluH9gg6Dbq+H2gmKJwzTyrmUDj99RbsWx4CYqiak=
-			</data>
-		</dict>
-		<key>Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			F1Ke5Z6rkzlru6Hls1dWC7AdiCbSmVnxE7P8XY2+cZY=
-			</data>
-		</dict>
-		<key>Frameworks/XCTAutomationSupport.framework/version.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6YYypq8I2iJo8ArOJiq6vPZEI0u3LnlIh8K2IyuVOBk=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AmK68TZqHbKBvdo7/uTYGofToBgnvlf9iZLByXIBl1U=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/XCTest</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1/TJAFwjHLbAmrSJiB+2LzkHJJCjrGOoyGJKJeDEB8I=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			K9iq+LfV1aUbu8VtV4LFdMmoFS26FTT7V0Zve0G8HbE=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6YYypq8I2iJo8ArOJiq6vPZEI0u3LnlIh8K2IyuVOBk=
-			</data>
-		</dict>
-		<key>Frameworks/libXCTestBundleInject.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ctts81K0p3OXfMqY4w1cpAfRA+3NNciZc51gVVnslSE=
-			</data>
-		</dict>
-		<key>Frameworks/libXCTestSwiftSupport.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4ZUmLJZ1VKgmMVW4yEReB7C8EBLW8LBE17wTEaiVdoE=
-			</data>
-		</dict>
-		<key>PlugIns/Apple-MusicTests.xctest/Apple-MusicTests</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BM31P1N0iH/9eulJfrDMULHrPaWpZIBbhotLGF+6vYk=
-			</data>
-		</dict>
-		<key>PlugIns/Apple-MusicTests.xctest/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ocj0MS1Q1eu7X3/pH4uvcqNHnuJuNAjB56Zve7QZBT8=
-			</data>
-		</dict>
-		<key>PlugIns/Apple-MusicTests.xctest/MockAlbumResponse.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gWnP0rgebUkl1f3Pq4kE2RCupQj/uMe8FQKJu+xAyOI=
-			</data>
-		</dict>
-		<key>PlugIns/Apple-MusicTests.xctest/MockAlbumsResponse.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uJahxOsx4bm4lSJvqx0nfj+az9L4WTrHt1UjQ3xDj3Y=
-			</data>
-		</dict>
-		<key>PlugIns/Apple-MusicTests.xctest/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			V6+0H6ppveSWxyCE2tfNbJoqvovW6fxll4viSwmfku4=
+			oq8JJYckBfs/y5YPOBMkePyZKpSt/1+ltd3GbZXUikk=
 			</data>
 		</dict>
 	</dict>
