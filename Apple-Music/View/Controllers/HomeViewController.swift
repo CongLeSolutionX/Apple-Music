@@ -89,6 +89,8 @@ extension HomeViewController: UITableViewDataSource {
         cell.contentView.backgroundColor = cell.isSelected ? UIColor.CustomColors.Blue.DodgerBlue : UIColor.white
         // get data for each cell
         cell.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
+        // animate each cell from the left 
+        cell.slideOutFromLeft()
         
         return cell
     }

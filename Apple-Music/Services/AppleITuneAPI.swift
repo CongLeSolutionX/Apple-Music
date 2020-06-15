@@ -20,7 +20,4 @@ struct AppleITuneAPI {
     static func getAlbumURL() -> URL? {
         return URL(string: base + topAlbums)
     }
-    
-    
-    
 }

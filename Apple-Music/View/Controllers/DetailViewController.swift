@@ -188,8 +188,6 @@ class DetailViewController: UIViewController {
             linkoutButton.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -20)
         ]
         NSLayoutConstraint.activate(constraints)
-        
-        
     }
     // MARK: Button to link out Safari
     @objc func linkoutButtonAction() {
@@ -212,5 +210,4 @@ class DetailViewController: UIViewController {
         
         present(alertPopup, animated: true, completion:  nil  )
     }
-    
 }
