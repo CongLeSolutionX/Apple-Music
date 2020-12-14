@@ -10,7 +10,7 @@ import Foundation
 @testable import Apple_Music
 
 class MockBadAlbumLoader: MockJSONLoader {
-    override func getAlbums(_ url: URL, completion: @escaping NetworkHandler) {
+    override func getAlbums(_ url: URL, completion: @escaping NetworkResponseHandler) {
         let albums = [MockExpectations.badAlbum,
                       MockExpectations.badAlbum]
         let feed = Feed(title: "Mock", id: "1",

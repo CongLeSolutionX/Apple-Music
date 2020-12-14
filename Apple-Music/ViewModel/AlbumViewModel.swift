@@ -24,12 +24,12 @@ class AlbumViewModel {
     }
     
     // Injecting depedencies from objects (NetworkConnection and ImageServiceProvider) at initilizing
-    init(service: NetworkService = NetworkConnection(), imageService: ImageServiceProvider = ImageService()) {
+    init(service: NetworkService = NetworkHandler(), imageService: ImageServiceProvider = ImageService()) {
         self.service = service
     }
     // MARK: - Methods
-    func downloadAlbum(_ url: URL) {
-        service.getAlbums(url ){ result in
+    func downloadAlbum(_ albumUrl: URL) {
+        service.getAlbums(albumUrl) { result in
             switch result {
             case .success(let responseAlbums):
                 self.albums = responseAlbums.feed?.results ?? []

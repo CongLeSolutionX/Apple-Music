@@ -10,7 +10,7 @@ import Foundation
 @testable import Apple_Music
 
 class MockNilLoader: MockJSONLoader {
-    override func getAlbums(_ url: URL, completion: @escaping NetworkHandler) {
+    override func getAlbums(_ url: URL, completion: @escaping NetworkResponseHandler) {
         completion(.failure(.init(errorDescription: "Bad")))
     }
 }

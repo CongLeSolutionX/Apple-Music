@@ -21,7 +21,7 @@ class MockJSONLoader: NetworkService {
         Result(catching: { try decoder.decode(type, from: option.data as Data) })
     }
     
-    func getAlbums(_ url: URL, completion: @escaping NetworkHandler) {
+    func getAlbums(_ url: URL, completion: @escaping NetworkResponseHandler) {
         let result = load(AppleMusicAlbums.self, .albums)
         guard case Result.success(let albumResult) = result else {
                 fatalError()
