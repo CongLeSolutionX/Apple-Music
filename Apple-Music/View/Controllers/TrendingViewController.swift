@@ -58,8 +58,7 @@ class TrendingViewController: AppleMusicViewController  {
     tableView.allowsSelection = true
     
     // get the reusable cells
-    tableView.register(CustomTableViewCell.self,
-                       forCellReuseIdentifier: CellsID.cellReuseIdendifier)
+    tableView.register(AlbumCell.self, forCellReuseIdentifier: AlbumCell.identifier)
     // update the UI of the table view with albums data
     albumViewModel.updateView = { [weak self] in
       DispatchQueue.main.async {
@@ -74,14 +73,14 @@ extension TrendingViewController: UITableViewDelegate {
     let detailVC = DetailViewController()
     detailVC.albumInfoViewModel = albumViewModel.infoAlbumViewModel(for: indexPath.row)
     navigationController?.pushViewController(detailVC, animated: true)
-    if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
+    if let cell = tableView.cellForRow(at: indexPath) as? AlbumCell {
       cell.contentView.backgroundColor = UIColor.CustomColors.Blue.DodgerBlue
     }
   }
   
   // didDeselectRowAtIndexPath - change background color
   func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-    if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
+    if let cell = tableView.cellForRow(at: indexPath) as? AlbumCell {
       cell.contentView.backgroundColor = UIColor.white
     }
   }
@@ -93,8 +92,8 @@ extension TrendingViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: CellsID.cellReuseIdendifier, for: indexPath)
-            as? CustomTableViewCell else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: CellsID.albumCellId, for: indexPath)
+            as? AlbumCell else {
       fatalError("Cannot dequeue cell")
     }
     // set color for cell background

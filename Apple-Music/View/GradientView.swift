@@ -1,5 +1,5 @@
 //
-//  GradientColorBackgroundView.swift
+//  GradientView.swift
 //  Apple-Music
 //
 //  Created by Cong Le on 4/26/20.

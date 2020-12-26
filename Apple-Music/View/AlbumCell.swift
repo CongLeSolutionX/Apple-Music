@@ -1,5 +1,5 @@
 //
-//  CustomTableViewCell.swift
+//  AlbumViewCell.swift
 //  Apple-Music
 //
 //  Created by Cong Le on 4/18/20.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
+class AlbumCell: UITableViewCell {
+  static let identifier = CellsID.albumCellId
+  
   lazy var albumImage: UIImageView = {
     let albumImage = UIImageView()
     albumImage.configureCornerRadius(cornerRadius: 10.0)
@@ -66,7 +68,7 @@ class CustomTableViewCell: UITableViewCell {
   }
 }
 // MARK: - Setting up constraints for UI elements
-extension CustomTableViewCell {
+extension AlbumCell {
   func setupViews() {
     contentView.addSubview(albumImage)
     contentView.addSubview(labelContainer)
