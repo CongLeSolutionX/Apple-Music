@@ -10,14 +10,14 @@ import Foundation
 
 // Construct the URL for JSON request 
 struct AppleITuneAPI {
-    
-    // https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json
-    
-    static let base = "https://rss.itunes.apple.com/api/v1/"
-    static let topAlbums = "/us/apple-music/top-albums/all/100/explicit.json"
-    
- 
-    static func getAlbumURL() -> URL? {
-        return URL(string: base + topAlbums)
-    }
+  
+  // https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json
+  
+  static let base = "https://rss.itunes.apple.com/api/v1/"
+  static let topAlbums = "/us/apple-music/top-albums/all/100/explicit.json"
+  
+  
+  static func getAlbumURL() -> URL? {
+    return URL(string: base + topAlbums)
+  }
 }
