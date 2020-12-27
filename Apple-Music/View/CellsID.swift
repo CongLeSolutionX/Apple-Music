@@ -9,5 +9,6 @@
 import Foundation
 
 enum CellsID {
-    static let cellReuseIdendifier = "Cell"
+    static let albumCellId = "AlbumCell"
+    static let trackCellId = "TrackCell"
 }

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3F2BF917245073EE00B2CCA6 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2BF916245073EE00B2CCA6 /* ImageService.swift */; };
 		4C262C0A2450CFA600B2D21C /* CellsID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C262C092450CFA600B2D21C /* CellsID.swift */; };
+		4C2C875E2597422000D4A893 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C875D2597422000D4A893 /* SearchViewController.swift */; };
+		4C2C8762259742A900D4A893 /* AppleMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C8761259742A900D4A893 /* AppleMusicViewController.swift */; };
+		4C2C877025974EFD00D4A893 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C876F25974EFD00D4A893 /* DownloadService.swift */; };
+		4C2C87742597501800D4A893 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C87732597501800D4A893 /* Track.swift */; };
+		4C2C87782597512F00D4A893 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C87772597512F00D4A893 /* QueryService.swift */; };
+		4C2C877C2597C1C900D4A893 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C877B2597C1C900D4A893 /* TrackCell.swift */; };
 		4C4C69F82452C92900DD3CA8 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C69F72452C92900DD3CA8 /* UIImageView+Extension.swift */; };
 		4C4C6A0C24531F7D00DD3CA8 /* MockAlbumExpectations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6A0B24531F7D00DD3CA8 /* MockAlbumExpectations.swift */; };
 		4C4C6A0E24531FE200DD3CA8 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6A0D24531FE200DD3CA8 /* AlbumTests.swift */; };
@@ -33,11 +39,11 @@
 		4CB9577B244EE6C200A00229 /* AlbumInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB9577A244EE6C200A00229 /* AlbumInfoViewModel.swift */; };
 		4CBD74062451F33E0032E5B0 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD74052451F33E0032E5B0 /* UILabel+Extensions.swift */; };
 		4CD206C0244AC1F100560B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206BF244AC1F100560B93 /* AppDelegate.swift */; };
-		4CD206C4244AC1F100560B93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206C3244AC1F100560B93 /* HomeViewController.swift */; };
+		4CD206C4244AC1F100560B93 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206C3244AC1F100560B93 /* TrendingViewController.swift */; };
 		4CD206C9244AC1F300560B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206C8244AC1F300560B93 /* Assets.xcassets */; };
 		4CD206CC244AC1F300560B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD206CA244AC1F300560B93 /* LaunchScreen.storyboard */; };
-		4CD206D4244B00D300560B93 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */; };
-		4CF7BA7D2455EE770040FA6A /* GradientColorBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7BA7C2455EE770040FA6A /* GradientColorBackgroundView.swift */; };
+		4CD206D4244B00D300560B93 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD206D3244B00D300560B93 /* AlbumCell.swift */; };
+		4CF7BA7D2455EE770040FA6A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7BA7C2455EE770040FA6A /* GradientView.swift */; };
 		4CF7BA7F24564CEA0040FA6A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7BA7E24564CEA0040FA6A /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,12 @@
 /* Begin PBXFileReference section */
 		3F2BF916245073EE00B2CCA6 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		4C262C092450CFA600B2D21C /* CellsID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsID.swift; sourceTree = "<group>"; };
+		4C2C875D2597422000D4A893 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4C2C8761259742A900D4A893 /* AppleMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicViewController.swift; sourceTree = "<group>"; };
+		4C2C876F25974EFD00D4A893 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		4C2C87732597501800D4A893 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		4C2C87772597512F00D4A893 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		4C2C877B2597C1C900D4A893 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		4C4C69F72452C92900DD3CA8 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		4C4C6A0024531EE900DD3CA8 /* Apple-MusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple-MusicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4C6A0424531EE900DD3CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,12 +93,12 @@
 		4CBD74052451F33E0032E5B0 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		4CD206BC244AC1F100560B93 /* Apple-Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD206BF244AC1F100560B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CD206C3244AC1F100560B93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4CD206C3244AC1F100560B93 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		4CD206C8244AC1F300560B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD206CB244AC1F300560B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CD206CD244AC1F300560B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		4CF7BA7C2455EE770040FA6A /* GradientColorBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColorBackgroundView.swift; sourceTree = "<group>"; };
+		4CD206D3244B00D300560B93 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		4CF7BA7C2455EE770040FA6A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4CF7BA7E24564CEA0040FA6A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4C97F2AC244CF263006D760F /* Album.swift */,
+				4C2C87732597501800D4A893 /* Track.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,8 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				4C262C092450CFA600B2D21C /* CellsID.swift */,
-				4CD206D3244B00D300560B93 /* CustomTableViewCell.swift */,
-				4CF7BA7C2455EE770040FA6A /* GradientColorBackgroundView.swift */,
+				4C2C877B2597C1C900D4A893 /* TrackCell.swift */,
+				4CD206D3244B00D300560B93 /* AlbumCell.swift */,
+				4CF7BA7C2455EE770040FA6A /* GradientView.swift */,
 				4C97F2B8244D134B006D760F /* Controllers */,
 			);
 			path = View;
@@ -191,9 +205,11 @@
 			isa = PBXGroup;
 			children = (
 				4C97F2B4244D00B9006D760F /* AlbumsService.swift */,
+				4C2C87772597512F00D4A893 /* QueryService.swift */,
 				3F2BF916245073EE00B2CCA6 /* ImageService.swift */,
 				4C4C6A2F24532AF300DD3CA8 /* ImagePersister.swift */,
 				4C97F2B6244D01DA006D760F /* AppleITuneAPI.swift */,
+				4C2C876F25974EFD00D4A893 /* DownloadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,7 +217,9 @@
 		4C97F2B8244D134B006D760F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4CD206C3244AC1F100560B93 /* HomeViewController.swift */,
+				4C2C8761259742A900D4A893 /* AppleMusicViewController.swift */,
+				4CD206C3244AC1F100560B93 /* TrendingViewController.swift */,
+				4C2C875D2597422000D4A893 /* SearchViewController.swift */,
 				4C97F2BB244D13A6006D760F /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -299,7 +317,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = CongLeSolutionX;
 				TargetAttributes = {
 					4C4C69FF24531EE900DD3CA8 = {
@@ -372,25 +390,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF7BA7D2455EE770040FA6A /* GradientColorBackgroundView.swift in Sources */,
+				4CF7BA7D2455EE770040FA6A /* GradientView.swift in Sources */,
 				4C97F2B7244D01DA006D760F /* AppleITuneAPI.swift in Sources */,
 				4CBD74062451F33E0032E5B0 /* UILabel+Extensions.swift in Sources */,
 				4C262C0A2450CFA600B2D21C /* CellsID.swift in Sources */,
+				4C2C87782597512F00D4A893 /* QueryService.swift in Sources */,
 				4C4C6A3024532AF300DD3CA8 /* ImagePersister.swift in Sources */,
+				4C2C87742597501800D4A893 /* Track.swift in Sources */,
 				4C97F2B2244CFF3F006D760F /* AlbumViewModel.swift in Sources */,
-				4CD206D4244B00D300560B93 /* CustomTableViewCell.swift in Sources */,
+				4CD206D4244B00D300560B93 /* AlbumCell.swift in Sources */,
 				4C9528A42497F42C0066A9A5 /* UITableViewCell+Extension.swift in Sources */,
+				4C2C877C2597C1C900D4A893 /* TrackCell.swift in Sources */,
 				4CB95777244EBA9B00A00229 /* UIView+Extensions.swift in Sources */,
 				3F2BF917245073EE00B2CCA6 /* ImageService.swift in Sources */,
-				4CD206C4244AC1F100560B93 /* HomeViewController.swift in Sources */,
+				4C2C875E2597422000D4A893 /* SearchViewController.swift in Sources */,
+				4CD206C4244AC1F100560B93 /* TrendingViewController.swift in Sources */,
 				4C97F2AD244CF263006D760F /* Album.swift in Sources */,
 				4CD206C0244AC1F100560B93 /* AppDelegate.swift in Sources */,
 				4CB9577B244EE6C200A00229 /* AlbumInfoViewModel.swift in Sources */,
+				4C2C8762259742A900D4A893 /* AppleMusicViewController.swift in Sources */,
 				4C83509024550E1F0066245C /* UIAlertController+Extension.swift in Sources */,
 				4C4C69F82452C92900DD3CA8 /* UIImageView+Extension.swift in Sources */,
 				4C97F2B5244D00B9006D760F /* AlbumsService.swift in Sources */,
 				4CF7BA7F24564CEA0040FA6A /* UIColor+Extension.swift in Sources */,
 				4C97F2BC244D13A6006D760F /* DetailViewController.swift in Sources */,
+				4C2C877025974EFD00D4A893 /* DownloadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +506,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -542,6 +567,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

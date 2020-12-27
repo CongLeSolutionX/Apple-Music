@@ -10,7 +10,6 @@ import Foundation
 
 typealias NetworkResponseHandler = (_ result: Result<AppleMusicAlbums, ServerErrors>) -> Void
 
-// Server error type
 struct ServerErrors: Error {
   var errorDescription: String?
 }
@@ -18,7 +17,8 @@ struct ServerErrors: Error {
 protocol NetworkService: class {
   func getAlbums(_ url: URL, completion: @escaping NetworkResponseHandler)
 }
-// Download albums from Apple API and save the data into model layer 
+
+/// Download albums from Apple API and save the data into model layer 
 class NetworkHandler: NSObject, NetworkService {
   
   func getAlbums(_ albumUrl: URL, completion: @escaping NetworkResponseHandler) {
