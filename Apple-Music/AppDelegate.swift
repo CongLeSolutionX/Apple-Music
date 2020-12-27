@@ -20,15 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.backgroundColor = .systemBackground
     
     let trendingVC = TrendingViewController()
-    let searchVC = SearchViewController()
-    
-    let searchNavigation = UINavigationController(rootViewController: searchVC)
     let trendingNavigation = UINavigationController(rootViewController: trendingVC)
-    
-    let tabBarController = UITabBarController()
-    tabBarController.viewControllers = [trendingNavigation, searchNavigation]
-    
-    window?.rootViewController = tabBarController
+   
+    window?.rootViewController = trendingNavigation
     
     return true
   }
