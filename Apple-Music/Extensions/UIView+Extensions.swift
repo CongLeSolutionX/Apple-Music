@@ -12,14 +12,12 @@ extension UIView {
     // pre-define constraint to the superview
     func pin(to superView: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
-        
-        let constraints = [
-        topAnchor.constraint(equalTo: superView.topAnchor),
-        leadingAnchor.constraint(equalTo: superView.leadingAnchor),
-        bottomAnchor.constraint(equalTo: superView.bottomAnchor),
-        trailingAnchor.constraint(equalTo: superView.trailingAnchor)
-        ]
-        NSLayoutConstraint.activate(constraints)
+        NSLayoutConstraint.activate([
+          topAnchor.constraint(equalTo: superView.topAnchor),
+          leadingAnchor.constraint(equalTo: superView.leadingAnchor),
+          bottomAnchor.constraint(equalTo: superView.bottomAnchor),
+          trailingAnchor.constraint(equalTo: superView.trailingAnchor)
+        ])
     }
     
     // Add a crimson shadow to a view

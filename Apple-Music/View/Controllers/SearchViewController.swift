@@ -20,37 +20,60 @@ class SearchViewController: AppleMusicViewController {
   var searchResults: [Track] = []
   
   let tableView = UITableView()
-  var searchBar = UISearchBar()
+  
+  lazy var searchBar: UISearchBar = {
+    let searchBar = UISearchBar()
+    searchBar.searchBarStyle = UISearchBar.Style.prominent
+    searchBar.placeholder = " Search title or artist..."
+    searchBar.sizeToFit()
+    searchBar.isTranslucent = false
+    searchBar.backgroundImage = UIImage()
+    searchBar.delegate = self
+    return searchBar
+  }()
   
   lazy var tapRecognizeer: UITapGestureRecognizer =  {
     var recognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
     return recognizer
   }()
   
+  override func loadView() {
+    super.loadView()
+    setUpTableView()
+    setupSearchBar()
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .systemIndigo
-    title = "Search Music"
-    
-    setUpTableView()
     tableView.tableFooterView = UIView()
   }
   
   override func commonInit() {
     setTabBarImage(imageName: "magnifyingglass.circle", title: "Search")
   }
+}
+
+// MARK: - Setup search bar and table view
+extension SearchViewController {
+  
+  func setupSearchBar() {
+    view.addSubview(searchBar)
+    navigationItem.titleView = searchBar
+  }
   
   func setUpTableView() {
+    // Contrain table to the superview
     view.addSubview(tableView)
     tableView.pin(to: view)
+    
     tableView.delegate = self
     tableView.dataSource = self
+    
     // self-sizing cells
     tableView.rowHeight = UITableView.automaticDimension
-    tableView.estimatedRowHeight = 100.0
     tableView.backgroundColor = UIColor.yellow
-    tableView.separatorStyle = .none
-    tableView.allowsSelection = true
+    //    tableView.separatorStyle = .none
+    //    tableView.allowsSelection = true
     
     // get the reusable cells
     tableView.register(TrackCell.self, forCellReuseIdentifier: TrackCell.identifier)
@@ -67,10 +90,10 @@ extension SearchViewController: UISearchBarDelegate {
     
     guard let searchText = searchBar.text, !searchText.isEmpty else { return }
     
-//    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    //    UIApplication.shared.isNetworkActivityIndicatorVisible = true
     
     queryService.getSearchResults(searchTerm: searchText) { [weak self] searchReuslts, error in
-//      UIApplication.shared.isNetworkActivityIndicatorVisible = false
+      //      UIApplication.shared.isNetworkActivityIndicatorVisible = false
       
       guard let results = searchReuslts else { return }
       self?.searchResults = results
@@ -101,7 +124,7 @@ extension SearchViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-  
+    
     /// Use default style and safely unwrap the `TrackCell`
     guard let cell: TrackCell = tableView.dequeueReusableCell(withIdentifier: TrackCell.identifier, for: indexPath) as? TrackCell else {
       let cell = TrackCell(style: .default, reuseIdentifier: TrackCell.identifier)
